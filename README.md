@@ -119,12 +119,12 @@ Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện t
   - Postconditions: Người dùng hoàn thành một bài học và nhận được phản hồi về độ chính xác.
   - Các bước thực hiện:
 
-  1. Người dùng chọn mục "Học chữ cái" từ menu.
-  2. Hệ thống hiển thị một chữ cái trong bảng chữ cái.
-  3. Người dùng thực hiện cử chỉ tay tương ứng.
-  4. Hệ thống sử dụng camera để nhận diện cử chỉ.
-  5. Hệ thống hiển thị phản hồi (đúng/sai) và chuyển sang chữ cái tiếp theo.
-  6. Sau khi hoàn thành bài học, hệ thống đưa ra đánh giá tổng quan.
+  1: Người dùng chọn mục "Học chữ cái" từ menu.
+  2: Hệ thống hiển thị một chữ cái trong bảng chữ cái.
+  3: Người dùng thực hiện cử chỉ tay tương ứng.
+  4: Hệ thống sử dụng camera để nhận diện cử chỉ.
+  5: Hệ thống hiển thị phản hồi (đúng/sai) và chuyển sang chữ cái tiếp theo.
+  6: Sau khi hoàn thành bài học, hệ thống đưa ra đánh giá tổng quan.
 
   - Các biến thể: Người dùng có thể chọn các chế độ học khác nhau như học theo thứ tự hoặc học ngẫu nhiên.
   - Các ngoại lệ: Nếu camera không thể nhận diện hoặc cử chỉ không rõ ràng, hệ thống sẽ yêu cầu người dùng thử lại.
@@ -137,11 +137,11 @@ Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện t
   - Postconditions: Hệ thống nhận diện chính xác và hiển thị văn bản tương ứng với cử chỉ tay.
   - Các bước thực hiện:
 
-  1. Người dùng chọn mục "Giao tiếp" trong menu.
-  2. Hệ thống hiển thị giao diện nhận diện.
-  3. Người dùng thực hiện các cử chỉ tay tương ứng với các chữ cái.
-  4. Hệ thống nhận diện cử chỉ và chuyển đổi thành văn bản trên màn hình.
-  5. Văn bản được hiển thị cho đối phương hoặc người dùng.
+  1: Người dùng chọn mục "Giao tiếp" trong menu.
+  2: Hệ thống hiển thị giao diện nhận diện.
+  3: Người dùng thực hiện các cử chỉ tay tương ứng với các chữ cái.
+  4: Hệ thống nhận diện cử chỉ và chuyển đổi thành văn bản trên màn hình.
+  5: Văn bản được hiển thị cho đối phương hoặc người dùng.
 
   - Các ngoại lệ: Nếu ánh sáng yếu hoặc cử chỉ không rõ, hệ thống sẽ thông báo và yêu cầu người dùng thử lại.
 
@@ -154,11 +154,11 @@ Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện t
 
   - Các bước thực hiện:
 
-1. Người dùng đăng nhập vào hệ thống và chọn "Đánh giá tiến độ" từ menu chính.
-2. Hệ thống truy xuất thông tin về quá trình học tập của người dùng (bao gồm các bài học đã hoàn thành, thời gian học và độ chính xác của cử chỉ).
-3. Hệ thống tính toán điểm số và độ tiến bộ dựa trên các yếu tố: độ chính xác, số lần thực hành, và mức độ khó của bài học.
-4. Hệ thống hiển thị một bảng thông tin chi tiết về tiến độ học tập (ví dụ: số lượng bài học đã hoàn thành, số chữ cái nhận diện chính xác, các từ đã học được và các cử chỉ tay mà người dùng cần cải thiện).
-5. Người dùng có thể xem lịch sử tiến độ của mình dưới dạng biểu đồ (nếu có).
+1: Người dùng đăng nhập vào hệ thống và chọn "Đánh giá tiến độ" từ menu chính.
+2: Hệ thống truy xuất thông tin về quá trình học tập của người dùng (bao gồm các bài học đã hoàn thành, thời gian học và độ chính xác của cử chỉ).
+3: Hệ thống tính toán điểm số và độ tiến bộ dựa trên các yếu tố: độ chính xác, số lần thực hành, và mức độ khó của bài học.
+4: Hệ thống hiển thị một bảng thông tin chi tiết về tiến độ học tập (ví dụ: số lượng bài học đã hoàn thành, số chữ cái nhận diện chính xác, các từ đã học được và các cử chỉ tay mà người dùng cần cải thiện).
+5: Người dùng có thể xem lịch sử tiến độ của mình dưới dạng biểu đồ (nếu có).
 
 - Các biến thể:
 
@@ -183,33 +183,33 @@ Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện t
 
   - Tuần 1:
 
-  * Thiết kế giao diện cơ bản với Bootstrap: tạo các trang chính như Trang chủ, Học thủ ngữ, và Theo dõi tiến độ.
-  * Cài đặt và cấu hình Flask làm backend cho dự án.
+Thiết kế giao diện cơ bản với Bootstrap: tạo các trang chính như Trang chủ, Học thủ ngữ, và Theo dõi tiến độ.
+Cài đặt và cấu hình Flask làm backend cho dự án.
 
-  - Tuần 2:
+- Tuần 2:
 
-  * Tích hợp camera trong giao diện web bằng cách sử dụng JavaScript và WebRTC.
-  * Tích hợp Mediapipe và OpenCV để xử lý hình ảnh và video từ camera.
+Tích hợp camera trong giao diện web bằng cách sử dụng JavaScript và WebRTC.
+Tích hợp Mediapipe và OpenCV để xử lý hình ảnh và video từ camera.
 
-  - Tuần 3:
+- Tuần 3:
 
-  * Phát triển tính năng nhận diện cử chỉ tay từng chữ cái và kết nối với backend Python.
-  * Hoàn thành tính năng phản hồi tức thì về độ chính xác của cử chỉ.
+Phát triển tính năng nhận diện cử chỉ tay từng chữ cái và kết nối với backend Python.
+Hoàn thành tính năng phản hồi tức thì về độ chính xác của cử chỉ.
 
-  - Tuần 4:
+- Tuần 4:
 
-  * Xây dựng chức năng "Học thủ ngữ" với các bài học và bài kiểm tra.
-  * Tích hợp hệ thống đánh giá và theo dõi tiến độ người dùng.
+Xây dựng chức năng "Học thủ ngữ" với các bài học và bài kiểm tra.
+Tích hợp hệ thống đánh giá và theo dõi tiến độ người dùng.
 
-  - Tuần 5:
+- Tuần 5:
 
-  * Kiểm thử tính năng nhận diện và tối ưu hóa hiệu suất.
-  * Triển khai hệ thống trên môi trường thử nghiệm để kiểm tra thực tế.
+Kiểm thử tính năng nhận diện và tối ưu hóa hiệu suất.
+Triển khai hệ thống trên môi trường thử nghiệm để kiểm tra thực tế.
 
-  - Tuần 6:
+- Tuần 6:
 
-  * Hoàn thành tài liệu hướng dẫn sử dụng và tài liệu kỹ thuật.
-  * Thực hiện kiểm tra cuối cùng và chuẩn bị báo cáo.
+Hoàn thành tài liệu hướng dẫn sử dụng và tài liệu kỹ thuật.
+Thực hiện kiểm tra cuối cùng và chuẩn bị báo cáo.
 
 - Rủi ro và thách thức:
 
