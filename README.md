@@ -1,7 +1,9 @@
 # Sign-Language-Master
+
 Dự án về đề tài Sign Language Master
 
 # Giới thiệu về thành viên nhóm (1 người )
+
 + Họ và tên: Quản Trọng Hùng
 + Mã sinh viên: 21013345
 + Lớp: K15-KHMT (AI&KHDL)
@@ -21,17 +23,18 @@ Nhóm chúng em với ý tưởng phát triển phần mềm nhận diện thủ
 Mục đích của hệ thống là giúp người dùng dễ dàng học và thực hành thủ ngữ thông qua các tương tác trực quan và đơn giản. Bằng cách nhận diện và phản hồi tức thì, hệ thống sẽ hỗ trợ người dùng cải thiện kỹ năng thủ ngữ của mình. Điều này giúp việc học thủ ngữ trở nên dễ tiếp cận hơn và tạo điều kiện thuận lợi cho việc giao tiếp với người khiếm thính trong cuộc sống hàng ngày. Đồng thời, người khiếm thính có thể sử dụng công cụ để dễ dàng hơn trong việc giao tiếp với mọi người.
 
 4. Thực Trạng:
+   
 Hiện nay, việc học và thực hành thủ ngữ thường được thực hiện thông qua sách, video, hoặc các khóa học trực tiếp với giáo viên. Tuy nhiên, các phương pháp này có thể thiếu tương tác và không cung cấp phản hồi tức thì, làm cho quá trình học tập trở nên khó khăn và chậm hơn. Hơn nữa, không phải ai cũng có điều kiện tiếp cận với các khóa học chất lượng hoặc có người hướng dẫn. Điều này giới hạn khả năng tự học và thực hành của người dùng.
 
-7. Điểm Mới:
+5. Điểm Mới:
    
 Điểm mới trong phương pháp của chúng em là sử dụng sự kết hợp giữa Python, Mediapipe, OpenCV và Scikit-Learn để xây dựng một hệ thống nhận diện thủ ngữ tự động. Hệ thống này không chỉ cung cấp phản hồi tức thì mà còn có khả năng học hỏi và cải thiện độ chính xác theo thời gian thông qua mô hình học máy. So với các phương pháp truyền thống, hệ thống của chúng em giúp việc học thủ ngữ trở nên trực quan và tương tác hơn, đồng thời có thể tiếp cận dễ dàng hơn đối với người dùng không có điều kiện tham gia các khóa học chuyên sâu. Điều này làm cho quá trình học thủ ngữ trở nên hiệu quả và thuận tiện hơn.
 
-5. Lợi Ích:
+6. Lợi Ích:
     
 Nếu thành công, hệ thống này sẽ tạo ra sự khác biệt đáng kể trong việc học và giao tiếp bằng thủ ngữ, đặc biệt là đối với người khiếm thính và những người muốn học thủ ngữ. Nó sẽ giúp người dùng dễ dàng tiếp cận và học thủ ngữ một cách hiệu quả hơn, ngay cả khi họ không có điều kiện tham gia các khóa học chính quy. Điều này không chỉ thúc đẩy sự hòa nhập xã hội của người khiếm thính mà còn tăng cường sự hiểu biết và giao tiếp giữa họ và cộng đồng.
 
-6. Hạn Chế:
+7. Hạn Chế:
     
 Thách thức lớn nhất mà chúng em dự đoán trong quá trình phát triển dự án là hệ thống hiện tại chỉ có khả năng chuyển đổi từ thủ ngữ thành các chữ cái riêng lẻ, thay vì các từ hoặc cụm từ hoàn chỉnh. Điều này giới hạn khả năng của hệ thống trong việc hiểu và truyền đạt các câu hoàn chỉnh, dẫn đến giao tiếp chưa đầy đủ. Để giảm thiểu rủi ro này, chúng em sẽ tập trung vào việc tối ưu hóa độ chính xác trong việc nhận diện từng chữ cái, đồng thời nghiên cứu và phát triển các mô hình ghép nối chữ cái thành cụm từ có nghĩa trong tương lai. Ngoài ra, do tập dữ liệu hiện tại chỉ hỗ trợ tiếng Anh, chúng em sẽ mở rộng sang các ngôn ngữ khác để tăng tính đa dạng và ứng dụng củahệ thống.
 
