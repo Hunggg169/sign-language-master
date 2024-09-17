@@ -103,4 +103,116 @@ Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện t
 1. Ý tưởng dự án:
    "Sign Language Master" là một ứng dụng web giúp người học thủ ngữ hoặc người khiếm thính có thể giao tiếp hiệu quả hơn với cộng đồng. Ứng dụng sẽ sử dụng camera để nhận diện cử chỉ tay của người dùng và chuyển đổi thành các ký tự hoặc từ trong ngôn ngữ viết.
 
-2. Các tính năng chính:
+2. Các tính năng chính(MVP):
+
+- Nhận diện thủ ngữ: Sử dụng camera để nhận diện cử chỉ tay và chuyển đổi thành các ký tự (A-Z) theo bảng thủ ngữ.
+- Học thủ ngữ: Người dùng có thể luyện tập với các bài học về thủ ngữ từng chữ cái hoặc cả câu.
+- Theo dõi tiến độ học: Ghi lại quá trình và đánh giá sự tiến bộ của người dùng qua các bài học và bài kiểm tra.
+
+3. Trường hợp sử dụng (Use Cases):
+
+- Use Case 1: Học thủ ngữ từng chữ cái
+
+* Actor: Người dùng (muốn học thủ ngữ).
+* Trigger: Người dùng chọn chế độ "Học chữ cái" trong giao diện chính.
+* Preconditions: Người dùng đã đăng nhập vào hệ thống và đã bật camera.
+* Postconditions: Người dùng hoàn thành một bài học và nhận được phản hồi về độ chính xác.
+* Các bước thực hiện:
+  1. Người dùng chọn mục "Học chữ cái" từ menu.
+  2. Hệ thống hiển thị một chữ cái trong bảng chữ cái.
+  3. Người dùng thực hiện cử chỉ tay tương ứng.
+  4. Hệ thống sử dụng camera để nhận diện cử chỉ.
+  5. Hệ thống hiển thị phản hồi (đúng/sai) và chuyển sang chữ cái tiếp theo.
+  6. Sau khi hoàn thành bài học, hệ thống đưa ra đánh giá tổng quan.
+* Các biến thể: Người dùng có thể chọn các chế độ học khác nhau như học theo thứ tự hoặc học ngẫu nhiên.
+* Các ngoại lệ: Nếu camera không thể nhận diện hoặc cử chỉ không rõ ràng, hệ thống sẽ yêu cầu người dùng thử lại.
+
+- Use Case 2: Nhận diện thủ ngữ trong giao tiếp
+
+* Actor: Người dùng muốn sử dụng thủ ngữ để giao tiếp.
+* Trigger: Người dùng chọn chế độ "Giao tiếp" và bắt đầu làm các cử chỉ tay.
+* Preconditions: Người dùng đã bật camera và chọn chế độ nhận diện.
+* Postconditions: Hệ thống nhận diện chính xác và hiển thị văn bản tương ứng với cử chỉ tay.
+* Các bước thực hiện:
+  1. Người dùng chọn mục "Giao tiếp" trong menu.
+  2. Hệ thống hiển thị giao diện nhận diện.
+  3. Người dùng thực hiện các cử chỉ tay tương ứng với các chữ cái.
+  4. Hệ thống nhận diện cử chỉ và chuyển đổi thành văn bản trên màn hình.
+  5. Văn bản được hiển thị cho đối phương hoặc người dùng.
+* Các ngoại lệ: Nếu ánh sáng yếu hoặc cử chỉ không rõ, hệ thống sẽ thông báo và yêu cầu người dùng thử lại.
+
+- Use Case 3: Đánh giá tiến độ học thủ ngữ
+
+* Actor: Người dùng (muốn kiểm tra và đánh giá tiến độ học tập của mình).
+* Trigger: Người dùng chọn mục "Đánh giá tiến độ" từ giao diện chính.
+* Preconditions: Người dùng đã hoàn thành ít nhất một số bài học hoặc bài kiểm tra trong ứng dụng.
+* Postconditions: Hệ thống hiển thị đánh giá về tiến độ học tập của người dùng (bao gồm số lượng chữ cái, từ đã học, độ chính xác của cử chỉ và điểm số tổng thể).
+
+* Các bước thực hiện:
+
+1. Người dùng đăng nhập vào hệ thống và chọn "Đánh giá tiến độ" từ menu chính.
+2. Hệ thống truy xuất thông tin về quá trình học tập của người dùng (bao gồm các bài học đã hoàn thành, thời gian học và độ chính xác của cử chỉ).
+3. Hệ thống tính toán điểm số và độ tiến bộ dựa trên các yếu tố: độ chính xác, số lần thực hành, và mức độ khó của bài học.
+4. Hệ thống hiển thị một bảng thông tin chi tiết về tiến độ học tập (ví dụ: số lượng bài học đã hoàn thành, số chữ cái nhận diện chính xác, các từ đã học được và các cử chỉ tay mà người dùng cần cải thiện).
+5. Người dùng có thể xem lịch sử tiến độ của mình dưới dạng biểu đồ (nếu có).
+
+- Các biến thể:
+
+* Người dùng có thể chọn một khoảng thời gian cụ thể để xem tiến độ (ví dụ: tuần này, tháng này, toàn bộ thời gian học).
+* Hệ thống có thể gợi ý các bài học hoặc bài kiểm tra tiếp theo dựa trên tiến độ hiện tại của người dùng.
+
+- Các ngoại lệ:
+
+* Nếu người dùng chưa hoàn thành bất kỳ bài học nào, hệ thống sẽ hiển thị thông báo khuyến khích họ bắt đầu học và không hiển thị thông tin đánh giá.
+
+=> Use case này giúp người dùng không chỉ theo dõi được quá trình học tập của mình mà còn có thể biết được họ cần cải thiện kỹ năng nào, từ đó tạo động lực để họ tiếp tục học thủ ngữ hiệu quả hơn.
+
+# Quy trình phát triển nhóm:
+
+- Công cụ phát triển:
+
+* Frontend: Sử dụng HTML5, CSS3, Bootstrap để thiết kế giao diện responsive, dễ sử dụng và thân thiện với người dùng.
+* Backend: Sử dụng Python với Flask để xây dựng API, xử lý dữ liệu từ camera và cung cấp kết quả nhận diện.
+* Thư viện Python: Mediapipe, OpenCV, Scikit-Learn để xử lý video và nhận diện cử chỉ tay.
+
+- Lịch trình phát triển (chi tiết từng tuần):
+
+* Tuần 1:
+
+  - Thiết kế giao diện cơ bản với Bootstrap: tạo các trang chính như Trang chủ, Học thủ ngữ, và Theo dõi tiến độ.
+  - Cài đặt và cấu hình Flask làm backend cho dự án.
+
+* Tuần 2:
+
+  - Tích hợp camera trong giao diện web bằng cách sử dụng JavaScript và WebRTC.
+  - Tích hợp Mediapipe và OpenCV để xử lý hình ảnh và video từ camera.
+
+* Tuần 3:
+
+  - Phát triển tính năng nhận diện cử chỉ tay từng chữ cái và kết nối với backend Python.
+  - Hoàn thành tính năng phản hồi tức thì về độ chính xác của cử chỉ.
+
+* Tuần 4:
+
+  - Xây dựng chức năng "Học thủ ngữ" với các bài học và bài kiểm tra.
+  - Tích hợp hệ thống đánh giá và theo dõi tiến độ người dùng.
+
+* Tuần 5:
+
+  - Kiểm thử tính năng nhận diện và tối ưu hóa hiệu suất.
+  - Triển khai hệ thống trên môi trường thử nghiệm để kiểm tra thực tế.
+
+* Tuần 6:
+  - Hoàn thành tài liệu hướng dẫn sử dụng và tài liệu kỹ thuật.
+  - Thực hiện kiểm tra cuối cùng và chuẩn bị báo cáo.
+
+- Rủi ro và thách thức:
+
+1. Khả năng nhận diện: Nếu điều kiện ánh sáng kém hoặc chất lượng video không tốt, hệ thống có thể không nhận diện được chính xác.
+2. Khối lượng công việc lớn: Với chỉ một người phát triển cả frontend và backend, cần có kế hoạch chặt chẽ và chia nhỏ công việc để đảm bảo tiến độ.
+3. Tính bảo mật: Đảm bảo hệ thống lưu trữ thông tin cá nhân một cách an toàn và không rò rỉ dữ liệu.
+
+- Điểm lấy phản hồi:
+
+* Sau tuần 3-4: Sau khi hoàn thành chức năng nhận diện và học thủ ngữ cơ bản, cần thu thập phản hồi từ người dùng thực tế (có thể từ người khiếm thính hoặc người học thủ ngữ).
+* Cuối tuần 6: Thực hiện kiểm tra cuối cùng và lấy phản hồi từ cố vấn hoặc giảng viên trước khi nộp báo cáo.
