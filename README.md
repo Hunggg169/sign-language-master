@@ -7,6 +7,7 @@ Dự án về đề tài Sign Language Master
 + Lớp: K15-KHMT (AI&KHDL)
 
 # Xây dựng phần mềm nhận diện thủ ngữ (Sign Language Master)
+
 1. Giới Thiệu:
 Nhóm chúng em đang phát triển phần mềm **nhận diện thủ ngữ** với mục tiêu giúp người khiếm thính giao tiếp hiệu quả hơn trong cuộc sống hàng ngày. Hiện tại, rào cản ngôn ngữ vẫn là một thách thức lớn đối với họ, và chúng em hy vọng rằng dự án này sẽ giúp thu hẹp khoảng cách đó bằng cách cung cấp một công cụ học tập và giao tiếp tiên tiến. Hệ thống của chúng em sẽ sử dụng sự kết hợp giữa **Python**, **Mediapipe**, **OpenCV**, và **Scikit-Learn** để nhận diện thủ ngữ một cách tự động, cung cấp phản hồi tức thì, đồng thời có khả năng cải thiện độ chính xác qua thời gian nhờ mô hình học máy. Mục tiêu chính là giúp người dùng dễ dàng học và thực hành thủ ngữ, tạo điều kiện thuận lợi để giao tiếp với người khiếm thính. Mặc dù hiện nay quá trình học thủ ngữ thường gặp khó khăn do thiếu tính tương tác và phản hồi, hệ thống của chúng em hứa hẹn sẽ mang đến trải nghiệm học tập trực quan, dễ dàng tiếp cận hơn, đặc biệt với những người không có điều kiện tham gia các khóa học chính quy. Tuy nhiên, một hạn chế của hệ thống hiện tại là chỉ nhận diện được từng chữ cái riêng lẻ thay vì từ hoặc câu hoàn chỉnh, điều này ảnh hưởng đến khả năng giao tiếp mạch lạc. Để khắc phục, nhóm sẽ tập trung tối ưu độ chính xác cho từng chữ cái và nghiên cứu các mô hình kết hợp thành từ trong tương lai. Dù hiện tại dữ liệu chỉ hỗ trợ tiếng Anh, chúng em cũng sẽ mở rộng sang các ngôn ngữ khác để tăng tính đa dạng và ứng dụng. Nếu thành công, hệ thống sẽ góp phần cải thiện chất lượng cuộc sống cho người khiếm thính và thúc đẩy sự hòa nhập xã hội.
 
@@ -34,6 +35,7 @@ Thách thức lớn nhất mà chúng em dự đoán trong quá trình phát tri
 + Backend: Sử dụng Flask hoặc Django (frameworks Python) để triển khai các chức năng xử lý hình ảnh và nhận diện thủ ngữ.
 + Machine Learning & Video Processing: Sử dụng Python với Mediapipe, OpenCV, và Scikit-learn để thực hiện nhận diện cử chỉ tay và trả kết quả về frontend.
 2. Cụ thể các bước cần làm:
+  
 a. Phát triển Backend với Python:
 - Flask/Django:
 + Flask là framework nhẹ, đơn giản, phù hợp cho các dự án nhỏ và trung bình. Django có thể cung cấp các tính năng mạnh mẽ hơn nếu bạn dự định mở rộng lớn.
