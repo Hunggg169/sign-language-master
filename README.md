@@ -53,9 +53,13 @@ Kết quả: Hiển thị kết quả nhận diện trên giao diện.
 
 3. Các bước thực hiện chi tiết:
 Bước 1: Cài đặt môi trường phát triển (Flask/Django, Mediapipe, OpenCV, Scikit-learn).
+
 Bước 2: Xây dựng API trong Flask/Django để xử lý dữ liệu video.
+
 Bước 3: Kết nối frontend với backend thông qua API.
+
 Bước 4: Huấn luyện mô hình Scikit-learn cho nhận diện thủ ngữ (hoặc sử dụng mô hình có sẵn nếu phù hợp).
+
 Bước 5: Kiểm thử hệ thống, tinh chỉnh mô hình và cải thiện trải nghiệm người dùng.
 
 
