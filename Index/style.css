@@ -1,0 +1,728 @@
+/* Reset CSS cơ bản */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  /* Đảm bảo kích thước toàn bộ màn hình */
+  position: relative;
+  /* Để thẻ a có thể định vị */
+}
+
+.background a {
+  display: block;
+  /* Đảm bảo thẻ a chiếm toàn bộ chiều rộng và chiều cao */
+  width: 100%;
+  height: 100%;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cusor */
+
+/* Đổi con trỏ chuột cho toàn bộ website */
+
+body {
+  cursor: url("../Image/cusor.png"), auto;
+  /* Sử dụng hình ảnh tùy chỉnh cho con trỏ */
+}
+
+/* Phong cách cho header */
+
+header {
+  position: absolute;
+  /* Giúp header có thể đè lên các phần tử khác */
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: white;
+  /* Đảm bảo header chiếm toàn bộ chiều rộng */
+  display: flex;
+  /* Tạo khoảng cách giữa logo và menu */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  padding: 10px;
+  /* Màu nền mờ để nhìn thấy phần nền phía sau */
+  z-index: 10;
+  /* Đảm bảo header hiển thị trên background */
+}
+
+/* Phong cách cho logo */
+
+.logo img {
+  max-width: 80px;
+  /* Điều chỉnh kích thước logo */
+  height: auto;
+  /* Tự động điều chỉnh chiều cao */
+}
+
+/* Phong cách cho menu */
+
+nav ul {
+  list-style: none;
+  /* Xóa dấu chấm đầu dòng */
+  display: flex;
+  /* Hiển thị các mục menu theo hàng ngang */
+}
+
+nav ul li {
+  margin-left: 20px;
+  /* Khoảng cách giữa các mục */
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* Bỏ gạch chân */
+  color: white;
+  /* Màu chữ */
+  font-size: 14px;
+  font-weight: bold;
+  /* Chữ đậm */
+  padding: 12px;
+  /* Tạo khoảng cách trong các mục menu */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Màu nền khi di chuột */
+  border-radius: 5px;
+  /* Bo tròn góc khi di chuột */
+}
+
+/* Phong cách cho background */
+
+.background {
+  width: 100%;
+  height: 100vh;
+  /* Đảm bảo kích thước toàn bộ màn hình */
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Header 2 */
+
+header2 {
+  margin-right: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Chiếm 40% chiều ngang màn hình */
+  display: flex;
+  justify-content: flex-end;
+  /* Căn chỉnh các mục về phía bên phải */
+  align-items: center;
+  /* Căn giữa theo chiều dọc */
+  padding: 10px;
+  /* Thêm padding giống như header */
+  z-index: 10;
+  /* Đảm bảo header hiển thị trên background */
+}
+
+.actions {
+  display: flex;
+  /* Sử dụng flexbox để căn chỉnh các biểu tượng */
+  /* Căn giữa theo chiều dọc */
+}
+
+.actions ul {
+  display: flex;
+  /* Hiển thị các mục danh sách theo hàng ngang */
+  list-style: none;
+  /* Xóa dấu chấm đầu dòng */
+  padding: 0;
+  /* Bỏ padding cho ul */
+  margin: 0;
+  /* Bỏ margin cho ul */
+}
+
+.actions li {
+  margin-left: 20px;
+  /* Khoảng cách giữa các mục */
+}
+
+.actions a {
+  color: white;
+  /* Màu sắc của biểu tượng */
+  font-size: 14px;
+  /* Kích thước biểu tượng */
+  padding: 10px;
+  /* Padding cho các mục */
+  border-radius: 50%;
+  /* Bo tròn các góc */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển màu nền */
+}
+
+.actions a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Màu nền khi hover */
+}
+
+.task_ {
+  margin-top: 20px;
+}
+
+.account-btn {
+  margin-top: 4px;
+  /* Khoảng cách bên trong nút */
+  /* Kích thước chữ trong nút */
+  background-color: transparent;
+  /* Màu nền của nút */
+  color: white;
+  /* Màu chữ trong nút */
+  border-radius: 10px;
+  /* Bỏ viền của nút */
+  border-radius: 20px;
+  /* Bo tròn các góc */
+  cursor: pointer;
+  /* Đổi con trỏ khi di chuột qua nút */
+  transition: background-color 0.3s;
+  /* Hiệu ứng chuyển màu nền khi hover */
+  font-size: 14px;
+  padding: 14px;
+}
+
+.account-btn i {
+  margin-right: 15px;
+}
+
+.account-btn:hover {
+  background-color: rgb(15, 4, 4);
+  /* Màu nền khi di chuột vào nút */
+}
+
+header2 {
+  margin-left: 0;
+  /* Đặt giá trị mặc định cho margin-left */
+  transition: margin-left 0.3s;
+  /* Thêm hiệu ứng chuyển đổi */
+}
+
+header2.moved {
+  margin-right: 340px;
+  /* Dịch chuyển sang phải 400px */
+}
+
+/* Solar System */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a0b3d;
+}
+
+.solar-system {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  margin-left: 800px;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  pointer-events: auto;
+  /* Cho phép tương tác */
+  z-index: 5;
+  /* Đảm bảo hiển thị trên các phần tử khác */
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Vòng tròn thứ nhất - không chứa hành tinh */
+
+.orbit1 {
+  width: 120px;
+  height: 120px;
+  margin-top: -60px;
+  margin-left: -60px;
+  border-width: 1px;
+}
+
+/* Vòng tròn thứ hai chứa Tài Liệu, Tài Trợ, và KTER */
+
+.orbit3 {
+  width: 220px;
+  height: 220px;
+  margin-top: -110px;
+  margin-left: -110px;
+  border-width: 1px;
+  animation: spin-orbit2 160s linear infinite;
+}
+
+/* Vòng tròn thứ ba chứa Phản Hồi và Hỏi Đáp */
+
+.orbit2 {
+  width: 320px;
+  height: 320px;
+  margin-top: -160px;
+  margin-left: -160px;
+  border-width: 1px;
+  animation: spin-orbit3 160s linear infinite;
+}
+
+/* Định dạng các hành tinh */
+
+.planet {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  pointer-events: auto;
+  /* Đảm bảo hành tinh có thể nhấp được */
+}
+
+/* Sử dụng cho các hành tinh */
+
+.sun,
+.planet-tai-lieu,
+.planet-tai-tro,
+.planet-kter,
+.planet-chung-chi,
+.planet-phan-hoi,
+.planet-hoi-dap {
+  pointer-events: auto;
+  /* Cho phép tương tác */
+}
+
+/* Hình ảnh trong các hành tinh */
+
+.planet img {
+  width: 100%;
+  /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+  height: 100%;
+  /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao */
+  border-radius: 50%;
+  /* Để hình ảnh có hình dạng tròn */
+  object-fit: cover;
+  /* Đảm bảo hình ảnh không bị biến dạng */
+}
+
+/* Vị trí của hành tinh Tài Liệu trong vòng tròn thứ hai (45 độ) */
+
+.planet-tai-lieu {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg) translate(110px) rotate(-45deg);
+  /* 110px là bán kính vòng tròn thứ hai */
+}
+
+/* Vị trí của hành tinh Tài Trợ trong vòng tròn thứ hai (135 độ) */
+
+.planet-tai-tro {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg) translate(110px)
+    rotate(-135deg);
+  /* 110px là bán kính vòng tròn thứ hai */
+}
+
+/* Vị trí của hành tinh KTER trong vòng tròn thứ hai (225 độ) */
+
+.planet-kter {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(225deg) translate(110px)
+    rotate(-225deg);
+  /* 110px là bán kính vòng tròn thứ hai */
+}
+
+/* Vị trí của hành tinh thứ tư (Chứng Chỉ) trong vòng tròn thứ hai (315 độ) */
+
+.planet-chung-chi {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(315deg) translate(110px)
+    rotate(-315deg);
+  /* 110px là bán kính vòng tròn thứ hai */
+}
+
+/* Vị trí của hành tinh Phản Hồi trong vòng tròn thứ ba (0 độ) */
+
+.planet-phan-hoi {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg) translate(160px)
+    rotate(-160deg);
+  /* 160px là bán kính vòng tròn thứ ba */
+}
+
+/* Vị trí của hành tinh Hỏi Đáp trong vòng tròn thứ ba (170 độ) */
+
+.planet-hoi-dap {
+  top: 50%;
+  left: 50%;
+  /* 160px là bán kính vòng tròn thứ ba */
+  transform: translate(-50%, -50%) rotate(0deg) translate(160px) rotate(0deg);
+}
+
+.text button:hover a {
+  color: #2e69ff;
+}
+
+.planet a img:hover {
+  filter: brightness(120%);
+}
+
+.sun a img:hover {
+  filter: brightness(150%);
+}
+
+@keyframes spin-orbit3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-orbit2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation cho các hành tinh tự quay quanh trục */
+
+@keyframes spin-planet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Text */
+
+.text {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  left: 0;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: justify;
+  padding-left: 200px;
+  padding-top: 100px;
+}
+
+.text span {
+  font-size: 16px;
+  color: rgb(240, 86, 34);
+  font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  padding: 24px;
+  text-align: justify;
+}
+
+.text h2 {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 700;
+  padding: 24px;
+  text-align: justify;
+}
+
+.text p {
+  line-height: 1.6;
+  color: #fff;
+  text-align: justify;
+  padding: 24px;
+}
+
+.text button {
+  background: #5d00ff;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 0, 255, 1) 0%,
+    rgba(33, 2, 94, 1) 100%
+  );
+  color: #fff;
+  font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  padding: 12px;
+  margin-left: 24px;
+}
+
+/* Box */
+
+.box {
+  display: none;
+  height: 100%;
+  width: 336px;
+  background-color: #1a0261;
+  /* Màu nền cho dễ nhìn */
+  position: absolute;
+  right: 0;
+  /* Dính vào bên phải */
+  top: 0;
+  /* Dính vào cạnh trên nếu muốn */
+}
+
+.header-box {
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-decoration: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 10;
+  color: #fff;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 0, 255, 1) 0%,
+    rgba(33, 2, 94, 1) 100%
+  );
+}
+
+.header-box ul li {
+  display: inline;
+  padding: 8px;
+}
+
+.header-box ul {
+  margin-left: 140px;
+}
+
+/* Style cho hộp trỏ xuống */
+
+.hover-box {
+  position: absolute;
+  display: none;
+  /* Ẩn ban đầu */
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-top: 10px;
+}
+
+/* Hiển thị box khi hover vào icon */
+
+.header-box ul li:hover .hover-box {
+  display: block;
+}
+
+/* Modal styles */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background-color: #1a0261;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.submit-btn:hover {
+  background-color: #2e69ff;
+}
+
+/* Định dạng chung cho nút Tài Khoản */
+
+/* Định dạng chung cho nút Tài Khoản */
+
+.account-btn {
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.account-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Định dạng chung cho dropdown (cho cả Đăng Ký/Đăng Nhập và Hồ Sơ/Đăng Xuất) */
+
+.dropdown-account {
+  background-color: #fff;
+  position: absolute;
+  width: 160px;
+  padding: 8px 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  display: none;
+  /* Ẩn mặc định */
+  z-index: 1;
+  justify-content: center;
+  top: 100%;
+  /* Hiển thị dropdown ngay dưới nút */
+  left: 0;
+  margin-top: 8px;
+  border-radius: 15px;
+  padding-left: 8px;
+}
+
+/* Các tùy chọn bên trong dropdown */
+
+.dropdown-option {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+  color: #2e69ff;
+}
+
+.dropdown-option i {
+  font-size: 16px;
+}
+
+/* Màu chữ cho các tùy chọn trong dropdown Đăng Ký - Đăng Nhập */
+
+#login-dropdown .dropdown-option {
+  color: #0a0b3d;
+  /* Đặt màu chữ tùy ý, ví dụ: xanh dương */
+}
+
+/* Đổi màu chữ cho dropdown Hồ Sơ - Cài Đặt - Đăng Xuất */
+
+#profile-dropdown .dropdown-option {
+  color: #0a0b3d;
+  /* Đặt màu chữ khác cho dropdown Hồ Sơ, ví dụ: cam */
+}
+
+/* Hiệu ứng hover cho cả hai dropdown */
+
+#login-dropdown .dropdown-option:hover,
+#profile-dropdown .dropdown-option:hover {
+  color: #2e69ff;
+  /* Màu khi hover có thể cùng màu hoặc khác màu */
+}

@@ -1,0 +1,420 @@
+/* Reset CSS */
+
+/* Reset toàn bộ phần tử */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 100%;
+  font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Background */
+
+.background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222c37;
+}
+
+.noi-dung-bai-giang,
+.danh-sach-bai-giang {
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  justify-items: center;
+  align-items: center;
+  background-color: #530ad4;
+  margin-top: 10px;
+  margin-left: 30px;
+  height: 34px;
+  font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-left: 3px;
+}
+
+.noi-dung-bai-giang i,
+.danh-sach-bai-giang i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.noi-dung-bai-giang:hover,
+.danh-sach-bai-giang:hover {
+  background-color: #0d89ed;
+}
+
+/* Data Tongle */
+
+.data-tongle2,
+.data-tongle {
+  display: flex;
+  width: 1818px;
+  height: 816px;
+  background-color: black;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.video-bai-giang img {
+  width: 1175px;
+  height: 816px;
+}
+
+.gioi-thieu-bai-giang {
+  flex: 1;
+  /* Chiếm phần còn lại */
+  background-color: #fff;
+  height: 100%;
+}
+
+.gioi-thieu-bai-giang h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* Đổi màu khi Bôi đen */
+
+.title-khoa-hoc2 p::selection,
+.title-khoa-hoc2 span::selection,
+.title-khoa-hoc1 p::selection,
+.title-khoa-hoc1 span::selection,
+.gioi-thieu-bai-giang h2::selection {
+  background-color: yellow;
+}
+
+/* Title khóa học cơ bản 1 */
+
+.title-khoa-hoc1 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.title-khoa-hoc1 a {
+  color: #2e69ff;
+  transition: color 0.12s ease-out;
+  font-weight: 700 !important;
+  background-color: transparent;
+  font-size: 16px;
+  margin-left: 8px;
+  margin-right: 45px;
+}
+
+.title-khoa-hoc1 a:hover {
+  text-decoration: underline;
+}
+
+.title-khoa-hoc1 > span {
+  font-weight: 700 !important;
+  overflow-wrap: anywhere;
+  color: #0d89ed;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 8px;
+}
+
+/* Title khóa học cơ bản  2*/
+
+.title-khoa-hoc2 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.title2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.title-khoa-hoc2-3 i,
+.title-khoa-hoc2-2 i,
+.title-khoa-hoc2-1 i {
+  color: #530ad4;
+  font-size: 16px;
+}
+
+.title-khoa-hoc2-3 span,
+.title-khoa-hoc2-2 span,
+.title-khoa-hoc2-1 span {
+  color: #0d89ed;
+  font-size: 16px;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.title-khoa-hoc2-2 {
+  margin-left: 50px;
+}
+
+.title-khoa-hoc2-3 i {
+  margin-left: 50px;
+}
+
+/* Title Khóa học 3 */
+
+.title-khoa-hoc3 {
+  margin-top: 20px;
+  border-top: 1px solid #bbb;
+  display: flex;
+  justify-content: center;
+  /* Căn giữa theo chiều ngang */
+}
+
+.title-khoa-hoc3 p {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  /* Đặt giới hạn chiều rộng để nội dung không quá dài */
+  text-align: justify;
+  /* Căn đều nội dung */
+  line-height: 1.6;
+  margin: 20px 0 24px;
+  /* Căn chỉnh khoảng cách trên dưới */
+  overflow-wrap: break-word;
+  /* Tự động xuống dòng khi từ quá dài */
+}
+
+.noi-dung-danh-sach-bai-giang {
+  width: 643px;
+  height: 816px;
+  background-color: #fff;
+}
+
+.video-danh-sach-bai-giang {
+  flex: 1;
+  background-color: black;
+}
+
+/* Nội Dung danh sác bài giảng */
+
+.noi-dung-danh-sach-bai-giang {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.noi-dung-danh-sach-bai-giang h5 i {
+  font-weight: 900;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.noi-dung-danh-sach-bai-giang h5 span {
+  font-size: 16px;
+}
+
+.search-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search-container input {
+  width: 550px;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-container button {
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -10px;
+}
+
+/* Video Dan Sách Bài Giảng */
+
+.ul-li-video-danh-sach-bai-giang {
+  position: absolute;
+  width: 580px;
+  height: 680px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.ul-li-video-danh-sach-bai-giang ul li {
+  padding: 10px;
+  color: #575757;
+}
+
+.ul-li-video-danh-sach-bai-giang ul li:hover {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Video danh sách bài giảng */
+
+/* Căn chỉnh khung video */
+
+.video-danh-sach-bai-giang iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1175px;
+  height: 816px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Trang trước sau */
+
+.trang-truoc button,
+.trang-sau button {
+  background-color: #007bff;
+  /* xanh dương tươi */
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  bottom: 58px;
+}
+
+/* hiệu ứng khi hover */
+
+.trang-truoc button:hover,
+.trang-sau button:hover {
+  background-color: #0056b3;
+  /* xanh đậm hơn khi hover */
+}
+
+/* hiệu ứng khi nhấn */
+
+.trang-truoc button:active,
+.trang-sau button:active {
+  transform: translateY(0);
+}
+
+/* căn chỉnh vị trí 2 nút */
+
+.trang-truoc,
+.trang-sau {
+  display: inline-block;
+}
+
+.trang-truoc {
+  margin-left: 230px;
+}
+
+.trang-sau {
+  padding-left: 105px;
+}
+
+.trang-sau button span {
+  padding: 10px;
+}
+
+#videoList li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 6px;
+}
+
+#videoList li:hover {
+  background: #e8f3ff;
+}
+
+#videoList li.active {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+#videoList li.completed::after {
+  content: "✔";
+  color: #28a745;
+  float: right;
+  font-weight: bold;
+}
+
+#progressContainer {
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  z-index: 1000;
+  width: 220px;
+}
+
+#progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  width: 0%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+#resetProgress {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background: #ff6464;
+  color: white;
+  cursor: pointer;
+}
+
+#resetProgress:hover {
+  background: #ff3838;
+}
+
+/* Nút thoát */
+
+.exit {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: ffff;
+  height: 32px;
+  width: 32px;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.exit i {
+  color: white;
+  font-size: 32px;
+}

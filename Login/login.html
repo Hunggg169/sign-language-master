@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="logo">
+      <a href="../Index/index.html">
+        <img src="../Image/image(1591).png" alt="Logo" />
+      </a>
+    </div>
+    <div class="text"><span>Đăng Nhập</span></div>
+    <div class="login-box">
+      <h1>Login</h1>
+
+      <form action="./login.php" id="login-form" method="POST">
+        <div class="text-form">
+          <span>Email hoặc Username</span>
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="text"
+            name="username"
+            placeholder="Email or Username"
+            required
+          />
+        </div>
+        <div class="text-form">
+          <span>Mật khẩu</span>
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+
+        <div class="label">
+          <label class="button-label">
+            <input type="checkbox" name="remember_me" />
+          </label>
+          <span>Duy trì đăng nhập? </span>
+        </div>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <div class="text-bottom">
+        <div class="chua-co-tk">
+          <span>Bạn chưa có tài khoản?</span>
+          <a href="../Register/register.html">Đăng Ký!</a>
+        </div>
+        <div class="quen-mk">
+          <span>Quên mật khẩu?</span>
+          <a href="../Forgotpassword/forgotpassword.html">Reset Password</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-message"></p>
+        <button
+          id="go-to-course-btn"
+          class="modal-button"
+          style="display: none"
+          onclick="window.location.href='../Index/index.html'"
+        >
+          Đi tới Tài Khoản
+        </button>
+        <button
+          id="show-account-btn"
+          class="modal-button"
+          style="display: none"
+        >
+          Hiện Tài Khoản
+        </button>
+        <button
+          id="account-btn"
+          class="modal-button"
+          style="display: none"
+          onclick="window.location.href='../Account/account.html'"
+        >
+          Đi tới Account
+        </button>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>

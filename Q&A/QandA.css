@@ -1,0 +1,170 @@
+/* Reset CSS cơ bản */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+
+/* Font và màu sắc tổng thể */
+
+:root {
+    --purple: #6a5acd;
+    --blue: #3f6fff;
+    --light-blue: #e6ecff;
+    --bg: #f7f8fc;
+    --text: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/*  Header */
+
+.header {
+    background: linear-gradient(90deg, var(--purple), var(--blue));
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*  Container chính */
+
+.qa-container {
+    flex: 1;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+/*  Ô hỏi */
+
+.ask-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+}
+
+.ask-box textarea {
+    resize: none;
+    border: 1.5px solid var(--light-blue);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    height: 100px;
+}
+
+.ask-box textarea:focus {
+    border-color: var(--blue);
+}
+
+.ask-box button {
+    align-self: flex-end;
+    background: linear-gradient(90deg, var(--purple), var(--blue));
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.ask-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(63, 111, 255, 0.3);
+}
+
+
+/*  Danh sách hỏi đáp */
+
+.qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.qa-item {
+    background: #fff;
+    border-left: 4px solid var(--purple);
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.qa-item:hover {
+    transform: translateY(-3px);
+}
+
+.question {
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 8px;
+}
+
+.answer {
+    color: #555;
+    line-height: 1.4;
+}
+
+
+/*  Footer */
+
+.footer {
+    background: linear-gradient(90deg, var(--purple), var(--blue));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.background img {
+    position: fixed;
+    width: 120px;
+    height: 80px;
+    top: 15px;
+    left: 0;
+}

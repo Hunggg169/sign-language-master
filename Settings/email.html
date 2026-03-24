@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Master</title>
+    <link rel="stylesheet" href="./email.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css" />
+
+    <link rel="shortcut icon" type="image/png" href="../Image/image(1591).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Background IMG -->
+    <div class="background">
+        <img src="../Image/bg.jpg" alt="Background Sign Language Master" />
+        <h2>Sign Language Master</h2>
+        <p>
+            Hãy tìm kiếm và học ngôn ngữ đăng ký học thông qua Sign Language Master
+        </p>
+    </div>
+    <!-- Task Bars -->
+    <div class="task-bars">
+        <a id="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+    <div class="content-header">
+        <div class="search2 content-header2">
+            <button onclick="toggleSearchWrapper()">
+          <i class="fa-thin fa-magnifying-glass"></i>
+        </button>
+        </div>
+        <div class="pencil2 content-header2">
+            <button id="toggle-pencil2"><i class="fa-solid fa-pencil"></i></button>
+            <!-- Pencil2 -->
+            <div class="hide-pencil2">
+                <div class="dat-cau-hoi hide-pencil2-2">
+                    <button>
+              <i class="fa-thin fa-circle-question"></i>
+              <span>Đặt Câu Hỏi</span>
+            </button>
+                </div>
+                <div class="viet-bai hide-pencil2-2">
+                    <a href="../Documentation/create.html">
+                        <i class="fa-thin fa-page"></i>
+                        <span>Viết Bài</span>
+                    </a>
+                </div>
+                <div class="tao-series hide-pencil2-2">
+                    <a href="../Series/series.html">
+                        <i class="fa-thin fa-list"></i>
+                        <span>Tạo Series</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="notification2 content-header2">
+            <button id="toggle-notification2">
+          <i class="fa-solid fa-bell"></i>
+        </button>
+            <div class="notification2-2">
+                <span>THÔNG BÁO</span>
+                <span2>Không có thông báo</span2>
+                <a href="../Notification/notification.html">Xem tất cả...</a>
+            </div>
+        </div>
+        <div class="user-acount content-header2">
+            <button id="toggle-user-acount">
+          <i class="fa-solid fa-user"></i>
+        </button>
+            <div class="hide-user-acount" id="user-account-menu">
+                <div class="ho-so menu-item">
+                    <a href="../MyUsers/MyUsers.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Hồ Sơ</span>
+                    </a>
+                </div>
+                <div class="cai-dat menu-item">
+                    <a href="../Settings/settings.html">
+                        <i class="fa-solid fa-wrench"></i>
+                        <span>Cài Đặt</span>
+                    </a>
+                </div>
+                <div class="dang-xuat menu-item">
+                    <a href="../Series/series.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Đăng Xuất</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Button -->
+    <div class="search-wrapper" id="searchWrapper" style="display: none">
+        <div class="search-button2">
+            <button class="search-close-btn" onclick="hideSearchWrapper()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+            <div class="input-container">
+                <input type="text" placeholder="Search or hit ESC..." />
+            </div>
+        </div>
+    </div>
+    <!-- Đặt Câu Hỏi -->
+    <div id="questionForm" class="question-form" style="display: none">
+        <div class="form-header">
+            <h2>TẠO CÂU HỎI MỚI</h2>
+            <button onclick="closeForm()">×</button>
+        </div>
+        <div class="form-body">
+            <label for="title">Tiêu đề</label>
+            <input type="text" id="title" placeholder="Mô tả ngắn gọn, cụ thể về câu hỏi của bạn" />
+
+            <label for="content">Nội dung</label>
+            <textarea id="content"></textarea>
+
+            <label for="tag">Thẻ</label>
+            <input type="text" id="tag" placeholder="Tag" />
+
+            <div class="form-footer">
+                <button class="form-footer-2" onclick="closeForm()">Hủy bỏ</button>
+                <button class="submit-button">TẠO CÂU HỎI</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Siderbar -->
+    <div class="siderbar" id="siderbar">
+        <div class="logo">
+            <a href="../Index/index.html">
+                <img src="../Image/image(1591).png" alt="Sign Language Master" />
+            </a>
+            <div class="logo-name">
+                <span>Sign Language Master</span>
+            </div>
+        </div>
+        <div class="avatar">
+            <a href="../MyUsers/MyUsers.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="user-name">
+                <a href="../Users/users.html"><span>Users</span></a>
+            </div>
+        </div>
+        <div class="history siderbar-list">
+            <a href="../History/history.html">
+                <i class="fa-solid fa-clock"></i>
+                <span>Lịch Sử</span>
+            </a>
+        </div>
+        <div class="saved siderbar-list">
+            <a href="../Saved/saved.html">
+                <i class="fa-regular fa-bookmark"></i>
+                <span>Đã Lưu</span>
+            </a>
+        </div>
+        <div class="name-page">
+            <span>PAGES</span>
+        </div>
+        <div class="learn siderbar-list">
+            <a href="../Learn/learn.html">
+                <i class="fa-thin fa-book-open"></i>
+                <span>Khóa Học</span>
+            </a>
+        </div>
+        <div class="chatbot siderbar-list">
+            <a href="../Chatbot/chatbot.html">
+                <i class="fa-solid fa-comment"></i>
+                <span>Chatbot</span>
+            </a>
+        </div>
+        <div class="music siderbar-list">
+            <a href="../Music/music.html">
+                <i class="fa-solid fa-music"></i>
+                <span>Music Healing</span>
+            </a>
+        </div>
+        <div class="progress siderbar-list">
+            <a href="../TienDo/tiendo.html">
+                <i class="fa-light fa-bars-progress"></i>
+                <span>Tiến Độ</span>
+            </a>
+        </div>
+        <div class="identification siderbar-list">
+            <a href="../Progress/templates/progress.html">
+                <i class="fa-thin fa-circle-camera"></i>
+                <span>Nhận Diện</span>
+            </a>
+        </div>
+        <div class="QandA siderbar-list">
+            <a href="../Q&A/QandA.html">
+                <i class="fa-thin fa-circle-question"></i>
+                <span>Hỏi Đáp</span>
+            </a>
+        </div>
+        <div class="document siderbar-list">
+            <a href="../Documentation/documentation.html">
+                <i class="fa-thin fa-files"></i>
+
+                <span>Bài Viết</span>
+            </a>
+        </div>
+        <div class="tag siderbar-list">
+            <a href="../Tags/tags.html">
+                <i class="fa-light fa-tag"></i>
+                <span>Tags</span>
+            </a>
+        </div>
+        <div class="users siderbar-list">
+            <a href="../Users/users.html">
+                <i class="fa-light fa-user-group"></i>
+                <span>Thành Viên</span>
+            </a>
+        </div>
+        <div class="about siderbar-list">
+            <a href="../About/about.html">
+                <i class="fa-thin fa-circle-info"></i>
+                <span>Thông Tin</span>
+            </a>
+        </div>
+        <div class="donate siderbar-list">
+            <a href="../Donate/donate.html">
+                <i class="fa-light fa-mug-saucer"></i>
+                <span>Tài Trợ</span>
+            </a>
+        </div>
+        <div class="contact siderbar-list">
+            <a href="../Contact/contact.html">
+                <i class="fa-thin fa-address-card"></i>
+                <span>Phản Hồi</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Khối box Right -->
+    <div class="box" id="box">
+        <div class="header-box">
+            <span>Quan tâm</span>
+            <ul>
+                <li>
+                    <button id="create-question-btn">
+              <i class="fa-thin fa-plus"></i>
+            </button>
+                    <div class="hover-box">Tạo Câu Hỏi</div>
+                </li>
+                <!-- Form nhập câu hỏi (ẩn mặc định) -->
+                <div class="modal" id="question-modal">
+                    <div class="modal-content">
+                        <span class="close-btn" id="close-btn">&times;</span>
+                        <h2>Nhập câu hỏi của bạn</h2>
+                        <input type="text" id="question-input" placeholder="Nhập câu hỏi" />
+                        <button id="submit-question" class="submit-btn">Gửi</button>
+                    </div>
+                </div>
+                <li>
+                    <a href="../Rooms/room.html"><i class="fa-solid fa-user-group"></i
+            ></a>
+                    <div class="hover-box">Nhóm Chát</div>
+                </li>
+                <li>
+                    <a href="../Tags/tags.html"><i class="fa-solid fa-ellipsis"></i></a>
+                    <div class="hover-box">Tag Theo Dõi</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Nội dung -->
+    <div class="content" id="Content">
+        <div class="settings-container">
+            <!-- Sidebar trái -->
+            <aside class="settings-sidebar" id="siderbar">
+                <div class="sidebar-header">
+                    <i class="fas fa-cog"></i>
+                    <span>CÀI ĐẶT</span>
+                </div>
+                <nav class="sidebar-menu">
+                    <a href="./settings.html"><i class="fas fa-id-card"></i> Hồ sơ</a>
+                    <a href="./avatar.html"><i class="fas fa-camera"></i> Ảnh đại diện</a
+            >
+            <a href="./password.html"><i class="fas fa-key"></i> Mật khẩu</a>
+                    <a href="#" class="active"><i class="fas fa-envelope"></i> Email</a>
+                </nav>
+            </aside>
+
+            <!-- Nội dung chính -->
+            <div class="email-content">
+                <div class="email-header">
+                    <h2>THÔNG TIN TÀI KHOẢN</h2>
+                </div>
+
+                <div class="email-body">
+                    <div class="form-group">
+                        <label>UserName</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username" disabled />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Footer -->
+    <div class="page-footer">
+        <div class="page-footer-icon pageFooter" id="pageFooter">
+            <a href="../Index/index.html">
+                <img src="../Image/image(1591).png" alt="Ảnh Icon Sign Language Master" />
+            </a>
+        </div>
+        <div class="footer-container pageFooter2" id="pageFooter2">
+            <div class="footer-column">
+                <h3>Thông tin SLM</h3>
+                <ul>
+                    <li><a href="#">Về SLM</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+                <h3>Đóng góp từ cộng đồng</h3>
+                <ul>
+                    <li><a href="#">Tài trợ</a></li>
+                    <li><a href="#">Người ủng hộ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Lĩnh vực</h3>
+                <ul>
+                    <li><a href="#">Giao tiếp và xã hội</a></li>
+                    <li><a href="#"> Học thuật</a></li>
+                    <li><a href="#">Nghề nghiệp</a></li>
+                    <li><a href="#">Y tế</a></li>
+                    <li><a href="#">Trẻ em và gia đình</a></li>
+                    <li><a href="#">Cảm xúc và tâm lý</a></li>
+                    <li><a href="#">Văn hóa và nghệ thuật</a></li>
+                    <li><a href="#">Thể thao và giải trí</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Khoá học</h3>
+                <ul>
+                    <li>
+                        <a href="../Course/khoa-hoc-co-ban/khoa-hoc-co-ban.html">Khóa học SLM cơ bản</a
+              >
+            </li>
+            <li>
+              <a href="../Course/99-dau-hieu-dau-tien/99-dau-hieu.html"
+                >99 Dấu Hiệu Đầu Tiên</a
+              >
+            </li>
+            <li>
+              <a href="../Course/bai-tap/bai-tap.html">Bài Tập SLM</a>
+                    </li>
+                    <li>
+                        <a href="../Course/bai-kiem-tra/bai-kiem-tra.html">Bài Kiểm Tra SLM</a
+              >
+            </li>
+            <li>
+              <a href="../Course/ngu-phap/ngu-phap.html"
+                >Khóa học SLM về ngữ pháp</a
+              >
+            </li>
+            <li>
+              <a href="../Course/phan-tich/phan-tich.html">Phân tích SLM</a>
+                    </li>
+                    <li>
+                        <a href="../Course/so-ASL/so-ASL.html">Số trong SLM</a>
+                    </li>
+                    <li>
+                        <a href="../Course/150-thiet-yeu/150-thiet-yeu.html">150 ký hiệu thiết yếu trong SLM</a
+              >
+            </li>
+            <li><a href="#">Xem thêm...</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Cộng đồng</h3>
+                <ul>
+                    <li><a href="#">Hỏi đáp</a></li>
+                    <li><a href="#">Tài liệu</a></li>
+                    <li><a href="#">Chiến dịch</a></li>
+                </ul>
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Cộng đồng học viên</a></li>
+                    <li><a href="#">Tài liệu học tập</a></li>
+                    <li><a href="#">Blog/Thông tin cập nhật</a></li>
+                    <li><a href="#">Hỗ trợ khách hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Kết nối với SLM</h3>
+                <p>Kết nối với Sign Language Master qua mạng xã hội</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="chung-nhan">
+                    <h3>Chứng nhận</h3>
+                </div>
+                <img src="../Image/chung nhan.png" alt="DMCA Protected" />
+            </div>
+        </div>
+    </div>
+    <!-- Button to scroll to top -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Liên Kết JS -->
+    <script src="./email.js"></script>
+</body>
+
+</html>

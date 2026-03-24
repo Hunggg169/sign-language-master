@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học Cơ Bản</title>
+    <link rel="stylesheet" href="./99-dau-hieu.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/your_kit_code.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Nút chuyển đổi -->
+      <div class="danh-sach-bai-giang">
+        <a href="javascript:void(0);" onclick="toggleSections('danhSach')">
+          <i class="fa-thin fa-list"></i>
+          <span>Danh sách bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="noi-dung-bai-giang" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleSections('noiDung')">
+          <i class="fa-solid fa-book"></i>
+          <span>Nội dung bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="data-tongle">
+        <div class="video-bai-giang">
+          <img
+            src="../Image/99 dau hieu dau tien.jpg"
+            alt="99 dấu hiệu đầu tiên"
+          />
+        </div>
+        <div class="gioi-thieu-bai-giang" id="gioiThieuBaiGiang">
+          <h2>Khóa Học 99 Dấu Hiệu Đầu Tiên</h2>
+          <div class="title-khoa-hoc1">
+            <p>Tạo bởi</p>
+            <a href="#"><span>Sign Language Master</span></a>
+            <p>Cập nhập lần cuối</p>
+            <span>9 tháng trước</span>
+          </div>
+          <div class="title-khoa-hoc2">
+            <div class="title-khoa-hoc2-1 title2">
+              <i class="fa-thin fa-notebook"></i>
+              <span>6</span>
+              <p>bài học</p>
+            </div>
+            <div class="title-khoa-hoc2-2 title2">
+              <i class="fa-light fa-eye"></i>
+              <span></span>
+              <p>lượt xem</p>
+            </div>
+            <div class="title-khoa-hoc2-3 title2">
+              <i class="fa-solid fa-comment"></i>
+              <span>0</span>
+              <p>bình luận</p>
+            </div>
+          </div>
+          <div class="title-khoa-hoc3">
+            <p>
+              99 dấu hiệu đầu tiên trong ngôn ngữ ký hiệu là bước khởi đầu quan
+              trọng cho những ai muốn làm quen với thế giới giao tiếp không lời.
+              Những dấu hiệu này bao gồm các từ vựng cơ bản nhất, từ các biểu
+              đạt cảm xúc như vui, buồn, đến các hành động hàng ngày như ăn,
+              uống, chào hỏi. Đây là nền tảng giúp người học dễ dàng giao tiếp
+              với cộng đồng người khiếm thính, tạo sự gắn kết và thấu hiểu qua
+              những cử chỉ. Việc nắm vững các dấu hiệu cơ bản sẽ mở ra cánh cửa
+              để tiếp tục học những ký hiệu phức tạp hơn, giúp người học tự tin
+              hơn trên hành trình khám phá ngôn ngữ ký hiệu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="data-tongle2" id="dataTongle2" style="display: none">
+        <div class="noi-dung-danh-sach-bai-giang">
+          <h5>
+            <i class="fa-thin fa-list"></i>
+            <span>Danh sách bài giảng</span>
+          </h5>
+          <div class="search-container">
+            <input type="text" placeholder="Tìm bài học..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="ul-li-video-danh-sach-bai-giang">
+            <ul id="videoList">
+              <li
+                data-index="0"
+                data-url="https://www.youtube.com/watch?v=r9gCipM-wn0&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe"
+              >
+                01. 99 ký hiệu đầu tiên của bạn
+              </li>
+              <li
+                data-index="1"
+                data-url="https://www.youtube.com/watch?v=5jIYrP9lRNo&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe&index=2"
+              >
+                02. Bài kiểm tra cụm từ
+              </li>
+              <li
+                data-index="2"
+                data-url="https://www.youtube.com/watch?v=mjd3WfBIpxQ&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe&index=3"
+              >
+                03. Dấu hiệu trong gia đình
+              </li>
+              <li
+                data-index="3"
+                data-url="https://www.youtube.com/watch?v=aXAs0ur_llI&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe&index=4"
+              >
+                04. Bài kiểm tra tiếp thu
+              </li>
+              <li
+                data-index="4"
+                data-url="https://www.youtube.com/watch?v=_Z7Pbx1cynI&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe&index=5"
+              >
+                05. Các dấu hiệu trong giao tiếp
+              </li>
+              <li
+                data-index="5"
+                data-url="https://www.youtube.com/watch?v=7_jwiit9nng&list=PLMN7QCuj6dfZ71A6K8ZUdB8VpQvgUvrAe&index=6"
+              >
+                06. Trắc nghiệm cụm từ
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-danh-sach-bai-giang">
+          <iframe
+            id="videoFrame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div id="progressContainer">
+            <div id="progressDisplay"></div>
+            <div class="progress-bar-bg">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nút chuyển đổi -->
+      <div class="trang-dieu-huong" id="trang-dieu-huong">
+        <div class="trang-truoc">
+          <button><span>Bài trước</span></button>
+        </div>
+        <div class="trang-sau">
+          <button><span>Bài sau</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liên Kết JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./99-dau-hieu.js"></script>
+  </body>
+</html>

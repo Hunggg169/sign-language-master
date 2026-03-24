@@ -1,0 +1,1120 @@
+/* Reset CSS */
+
+
+/* Reset toàn bộ phần tử */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    height: 1800px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Background IMG */
+
+.background img {
+    position: relative;
+    width: 100%;
+    max-height: 210px;
+    object-fit: cover;
+}
+
+.background h2 {
+    position: absolute;
+    top: 0;
+    font-size: 1.857143rem;
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin-left: 320px;
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+.background p {
+    position: absolute;
+    top: 0;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 700 !important;
+    margin-left: 320px;
+    margin-top: 140px;
+    padding: 10px 0;
+}
+
+
+/* Siderbar */
+
+.learn {
+    color: #42a5f5;
+}
+
+.siderbar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    z-index: 5;
+    /* Đảm bảo sidebar không che nút */
+}
+
+.siderbar-list {
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a img {
+    max-width: 120px;
+    /* Điều chỉnh kích thước logo */
+    height: auto;
+    /* Tự động điều chỉnh chiều cao */
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.logo-name span {
+    font-size: 18px;
+    /* Điều chỉnh kích thước tên */
+    margin-top: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.avatar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #2d3238;
+    padding-bottom: 10px;
+}
+
+.avatar a i {
+    font-size: 60px;
+    /* Điều chỉnh kích thước avatar */
+    margin-top: 20px;
+    margin-left: 82px;
+    color: #fff;
+}
+
+.user-name span {
+    font-size: 18px;
+    /* Điều chỉnh kích thước tên người dùng */
+    margin-left: 82px;
+    color: #fff;
+}
+
+.user-name a span:hover {
+    text-decoration: dashed;
+    opacity: 0.4;
+    text-decoration: underline;
+}
+
+.siderbar-list {
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.siderbar-list a i {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.siderbar-list a span {
+    font-size: 16px;
+}
+
+.siderbar-list:hover {
+    background-color: #2d3238;
+    color: #42a5f5;
+}
+
+.name-page {
+    padding: 24px 18px 6px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Task Bars */
+
+.task-bars a {
+    padding: 10px;
+}
+
+.task-bars a i {
+    position: absolute;
+    color: #fff;
+    /* Màu của icon */
+    font-size: 20px;
+    /* Kích thước icon */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Thêm hiệu ứng chuyển đổi */
+    margin-left: 300px;
+    top: 0;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+/* Hiệu ứng khi hover vào nút */
+
+.task-bars a:hover i {
+    color: #42a5f5;
+    /* Đổi màu icon khi hover */
+    transform: scale(1.1);
+    /* Tăng kích thước một chút khi hover */
+    background-color: #343a40;
+    border-radius: 50%;
+}
+
+
+/* Sidebar Styles */
+
+.siderbar {
+    transition: transform 0.3s ease;
+}
+
+
+/* Trượt sidebar vào bên trái khi ẩn */
+
+.sidebar-hidden {
+    transform: translateX(-100%);
+}
+
+
+/* Di chuyển nút toggle-button khi sidebar ẩn */
+
+.task-bars .a-move-left {
+    margin-left: -250px;
+    transition: margin-left 0.3s ease;
+}
+
+.background.move-text-left h2 {
+    margin-left: 65px;
+    transition: margin-left 0.3s ease;
+}
+
+.background.move-text-left p {
+    margin-left: 65px;
+    transition: margin-left 0.3s ease;
+}
+
+
+/* Box right*/
+
+.box {
+    position: fixed;
+    height: 100%;
+    width: 336px;
+    background-color: #1a0261;
+    /* Màu nền cho dễ nhìn */
+    right: 0;
+    /* Dính vào bên phải */
+    top: 0;
+    /* Dính vào cạnh trên nếu muốn */
+}
+
+.header-box {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+    color: #fff;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(93, 0, 255, 1) 0%, rgba(33, 2, 94, 1) 100%);
+}
+
+.header-box ul li {
+    display: inline;
+    padding: 8px;
+}
+
+.header-box ul {
+    margin-left: 120px;
+}
+
+.header-box ul li button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* Style cho hộp trỏ xuống */
+
+.hover-box {
+    position: absolute;
+    display: none;
+    /* Ẩn ban đầu */
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-top: 10px;
+}
+
+
+/* Hiển thị box khi hover vào icon */
+
+.header-box ul li:hover .hover-box {
+    display: block;
+}
+
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #1a0261;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.submit-btn:hover {
+    background-color: #2e69ff;
+}
+
+
+/* Content Header */
+
+.content-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    /* Đảm bảo icon căn chỉnh theo phần tử cha */
+    top: 0;
+    right: 0;
+    margin-right: 400px;
+    margin-top: 20px;
+}
+
+
+/* Icon bên trong các nút của content-header2 */
+
+.content-header2 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+}
+
+.content-header2 button i {
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+
+/* Hiệu ứng khi hover vào nút */
+
+.content-header2 button:hover i {
+    color: #42a5f5;
+    transform: scale(1.1);
+    background-color: #343a40;
+    border-radius: 50%;
+}
+
+
+/* Search Button */
+
+
+/* Container lớn bao gồm cả nút X và ô input */
+
+.search-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 20px;
+    width: 1600px;
+    background-color: #fff;
+}
+
+
+/* Container cho nút X và input */
+
+.search-button2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    width: 1400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+}
+
+
+/* Nút đóng */
+
+.search-close-btn {
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: #333;
+    outline: none;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 1500px;
+    margin-left: 30px;
+    border: 1px solid #e0e0e0;
+    background-color: #d3d7dc;
+    width: 30px;
+}
+
+
+/* Ô chứa input */
+
+.input-container {
+    flex-grow: 1;
+}
+
+
+/* Input bên trong input-container */
+
+.input-container input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+}
+
+
+/* Pencil2 */
+
+.pencil2 {
+    position: relative;
+}
+
+.hide-pencil2 {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 15px;
+    display: none;
+}
+
+
+/* Hiển thị khi có lớp active */
+
+.hide-pencil2.active {
+    display: block;
+}
+
+.hide-pencil2-2 a {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.hide-pencil2-2 a i {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.dat-cau-hoi {
+    margin-left: 6px;
+}
+
+.dat-cau-hoi button i {
+    font-size: 16px;
+    color: black;
+}
+
+.dat-cau-hoi button {
+    color: black;
+    font-size: 16px;
+}
+
+.dat-cau-hoi button i {
+    font-size: 16px;
+    color: black;
+}
+
+.dat-cau-hoi button:hover i {
+    color: black;
+    background-color: transparent;
+}
+
+.dat-cau-hoi button:hover {
+    opacity: 0.8;
+}
+
+
+/* Áp dụng hiệu ứng chuyển đổi mượt mà cho các icon bên trong liên kết */
+
+.viet-bai a i,
+.tao-series a i {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Tạo hiệu ứng chuyển đổi mượt mà cho cả phóng to và độ mờ */
+}
+
+
+/* Áp dụng hiệu ứng hover cho các icon */
+
+.viet-bai a:hover i,
+.tao-series a:hover i {
+    opacity: 0.8;
+    transform: scale(1.1);
+    /* Phóng to 10% khi hover */
+}
+
+.tao-series,
+.viet-bai {
+    margin-top: 10px;
+    color: black;
+}
+
+.tao-series {
+    margin-top: 14px;
+}
+
+.tao-series a span,
+.viet-bai a span {
+    margin-left: 5px;
+}
+
+.viet-bai a i {
+    font-size: 16px;
+}
+
+
+/* Notification2-2 */
+
+.notification2 {
+    position: relative;
+}
+
+.notification2-2 {
+    position: absolute;
+    width: 300px;
+    height: 348px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-left: -268px;
+    border-radius: 10px;
+    display: none;
+}
+
+.notification2-2.active {
+    display: block;
+}
+
+.notification2-2 span {
+    width: 250px;
+    position: absolute;
+    font-size: 1rem;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #171717;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    border-bottom: 1px solid #bbb;
+}
+
+.notification2-2 span2 {
+    width: 250px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 160px;
+    list-style: none;
+    color: #575757;
+    font-size: 1rem;
+}
+
+.notification2-2 a {
+    text-align: center !important;
+    margin-bottom: 0 !important;
+    display: block;
+    width: 80%;
+    padding: 5px 10px;
+    clear: both;
+    font-weight: 400;
+    color: #575757;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    margin-top: 300px;
+    border-top: 1px solid #bbb;
+    margin-left: 30px;
+    padding-top: 120px;
+}
+
+
+/* Hide Acount */
+
+
+/* User Account Position */
+
+.user-acount {
+    position: relative;
+}
+
+
+/* Hide User Account Menu */
+
+.hide-user-acount {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 15px;
+    display: none;
+    margin-left: -110px;
+}
+
+
+/* Display Menu when Active */
+
+.hide-user-acount.active {
+    display: block;
+}
+
+
+/* General Styles for Links */
+
+.hide-user-acount a {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.menu-item a span {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+/* Profile Button Styling */
+
+.ho-so {
+    margin-top: 10px;
+}
+
+.ho-so a {
+    color: black;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.ho-so a i {
+    margin-left: 10px;
+}
+
+.ho-so a i {
+    font-size: 16px;
+    color: black;
+}
+
+.ho-so a:hover {
+    opacity: 0.6;
+}
+
+.ho-so a:hover i {
+    color: black;
+    background-color: transparent;
+    opacity: 0.6;
+}
+
+
+/* Smooth Transition for Icons in Links */
+
+.cai-dat a,
+.dang-xuat a {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* Hover Effects for Icons */
+
+.cai-dat a:hover,
+.dang-xuat a:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+    /* Scale by 10% on hover */
+}
+
+
+/* Additional Spacing for Menu Items */
+
+.ho-so,
+.dang-xuat {
+    color: black;
+}
+
+.dang-xuat {
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+
+/* Spacing for Text inside Links */
+
+.cai-dat a span,
+.dang-xuat a span {
+    margin-left: 5px;
+}
+
+
+/* Icon Size for Settings Link */
+
+.cai-dat a i {
+    font-size: 16px;
+}
+
+
+/* Default Color for Text inside Links */
+
+.hide-user-acount a span {
+    color: #000;
+}
+
+.ho-so {
+    margin-bottom: 10px;
+}
+
+.ho-so button i {
+    margin-left: 5px;
+}
+
+.cai-dat {
+    margin-left: 10px;
+}
+
+.cai-dat a span {
+    margin-left: 8px;
+}
+
+.dang-xuat a span {
+    margin-left: 12px;
+}
+
+
+/* Đặt Câu Hỏi */
+
+.question-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.form-header h2 {
+    margin: 0;
+}
+
+.form-header button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.form-body {
+    padding: 20px 0;
+}
+
+.form-body label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-body input,
+.form-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-footer-2,
+.submit-button {
+    background-color: #530ad4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-footer-2:hover,
+.submit-button:hover {
+    background-color: #0d89ed;
+}
+
+.form-header {
+    padding: 10px;
+    background-color: #343a40;
+}
+
+.form-header h2 {
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+
+.form-header button {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+/*Thanh Khóa Học */
+
+.thanh-khoa-hoc {
+    padding: 10px;
+    max-width: 1400px;
+    height: 50px;
+    background-color: #f5f6f7;
+    margin-left: 320px;
+}
+
+.thanh-khoa-hoc a i {
+    color: #0b72c6;
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.thanh-khoa-hoc a i:hover {
+    opacity: 0.8;
+}
+
+.thanh-khoa-hoc span::selection {
+    background: #fff600;
+    color: #222c37;
+    text-shadow: none;
+}
+
+.thanh-khoa-hoc span {
+    color: #171717;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+}
+
+
+/* Thanh Khóa Học Di chuyển khi ẩn Task Bars */
+
+.thanh-khoa-hoc.move-text-left {
+    margin-left: 65px;
+    transition: margin-left 0.3s ease;
+}
+
+
+/* Tìm Khóa Học */
+
+.tim-khoa-hoc {
+    margin-top: 20px;
+    padding: 10px;
+    width: 1400px !important;
+    height: 50px;
+    background-color: #f5f6f7;
+    margin-left: 320px;
+    border: 1px solid #bbb;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+.tim-khoa-hoc input {
+    width: 1100px;
+    padding: 16px;
+    border: none;
+    margin-left: -10px;
+    height: 40px;
+    font-size: 1.142857rem;
+    line-height: 20px;
+}
+
+.tim-khoa-hoc button {
+    border: 1px solid #bbb;
+    padding: 16px;
+}
+
+.tim-khoa-hoc button i {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 14px;
+}
+
+
+/* tim Khóa Học Di chuyển khi ẩn Task Bars */
+
+.tim-khoa-hoc.move-text-left {
+    margin-left: 65px;
+    transition: margin-left 0.3s ease;
+}
+
+
+/* Tiêu Đề Khóa Học */
+
+.tieu-de-khoa-hoc {
+    width: 1400px;
+    display: flex;
+    margin-left: 320px;
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* Tiêu Đề Khóa Học Di chuyển khi ẩn Task Bars */
+
+.tieu-de-khoa-hoc.move-text-left {
+    margin-left: 65px;
+    transition: margin-left 0.3s ease;
+}
+
+
+/* Tiêu Đề Trái */
+
+.tieu-de-trai {
+    display: flex;
+}
+
+.icon-tieu-de i {
+    font-size: 32px;
+    margin-right: 15px;
+}
+
+.ten-tieu-de span {
+    font-size: 28px;
+}
+
+.ten-tieu-de span::selection {
+    background-color: yellow;
+}
+
+
+/* Tiêu Đề Phải */
+
+
+/* Căn chỉnh container chính */
+
+.tieu-de-phai {
+    display: flex;
+    gap: 15px;
+    /* Khoảng cách giữa hai nút */
+    margin-left: 730px;
+    position: relative;
+}
+
+
+/* Căn chỉnh các nút */
+
+.tieu-de-phai-btn button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Khoảng cách giữa các phần tử trong nút */
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent !important;
+    border: none;
+}
+
+
+/* Căn chỉnh số đếm */
+
+.tieu-de-phai-btn .count {
+    font-weight: bold;
+    color: red;
+}
+
+.tieu-de-phai-btn span {
+    height: 34px;
+    font-family: "Google Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+}
+
+
+/* Định dạng mũi tên xuống */
+
+.tieu-de-phai-btn button i {
+    transition: transform 0.3s ease;
+}
+
+
+/* Định dạng danh sách chu-de-list */
+
+.chu-de-list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* Điều chỉnh khoảng cách so với nút */
+    left: 0;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px 0;
+    opacity: 1;
+    /* Đặt opacity của hộp là 1 để không bị ảnh hưởng */
+    margin-left: -50px;
+}
+
+
+/* Hiển thị khi nhấn vào */
+
+.tieu-de-phai-btn.active .chu-de-list {
+    display: block;
+}
+
+
+/* Định dạng các mục trong danh sách */
+
+.chu-de-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    /* Căn trái cho các mục */
+}
+
+.chu-de-list ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    opacity: 1;
+    /* Đặt opacity cho các mục là 1 để không bị ảnh hưởng */
+    text-align: left;
+    /* Căn trái cho nội dung */
+}
+
+
+/* Hiệu ứng hover cho các mục */
+
+.chu-de-list ul li:hover {
+    background-color: #f0f0f0;
+    opacity: 1;
+    /* Giữ opacity là 1 khi hover */
+}

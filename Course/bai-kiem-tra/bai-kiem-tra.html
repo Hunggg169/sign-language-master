@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học Cơ Bản</title>
+    <link rel="stylesheet" href="./bai-kiem-tra.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/your_kit_code.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Nút chuyển đổi -->
+      <div class="danh-sach-bai-giang">
+        <a href="javascript:void(0);" onclick="toggleSections('danhSach')">
+          <i class="fa-thin fa-list"></i>
+          <span>Danh sách bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="noi-dung-bai-giang" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleSections('noiDung')">
+          <i class="fa-solid fa-book"></i>
+          <span>Nội dung bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="data-tongle">
+        <div class="video-bai-giang">
+          <img src="../Image/Bài Kiểm Tra.jpg" alt="Khóa Học Cơ Bản" />
+        </div>
+        <div class="gioi-thieu-bai-giang" id="gioiThieuBaiGiang">
+          <h2>Khóa Học Bài Tập Trong Sign Language Master</h2>
+          <div class="title-khoa-hoc1">
+            <p>Tạo bởi</p>
+            <a href="#"><span>Sign Language Master</span></a>
+            <p>Cập nhập lần cuối</p>
+            <span>3 tháng trước</span>
+          </div>
+          <div class="title-khoa-hoc2">
+            <div class="title-khoa-hoc2-1 title2">
+              <i class="fa-thin fa-notebook"></i>
+              <span>15</span>
+              <p>bài học</p>
+            </div>
+            <div class="title-khoa-hoc2-2 title2">
+              <i class="fa-light fa-eye"></i>
+              <span></span>
+              <p>lượt xem</p>
+            </div>
+            <div class="title-khoa-hoc2-3 title2">
+              <i class="fa-solid fa-comment"></i>
+              <span>0</span>
+              <p>bình luận</p>
+            </div>
+          </div>
+          <div class="title-khoa-hoc3">
+            <p>
+              Bài kiểm tra trong ngôn ngữ ký hiệu được thiết kế để đánh giá khả
+              năng ghi nhớ và sử dụng các ký hiệu đã học. Người học sẽ được yêu
+              cầu thực hiện các cử chỉ thể hiện các từ vựng và câu đơn giản, từ
+              việc giới thiệu bản thân đến giao tiếp các câu hỏi và câu trả lời
+              ngắn. Bài kiểm tra giúp củng cố kiến thức, phát hiện điểm yếu và
+              nâng cao sự tự tin trong việc sử dụng ngôn ngữ ký hiệu, từ đó hỗ
+              trợ người học tiến xa hơn trong quá trình làm quen với ngôn ngữ
+              đặc biệt này.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="data-tongle2" id="dataTongle2" style="display: none">
+        <div class="noi-dung-danh-sach-bai-giang">
+          <h5>
+            <i class="fa-thin fa-list"></i>
+            <span>Danh sách bài giảng</span>
+          </h5>
+          <div class="search-container">
+            <input type="text" placeholder="Tìm bài học..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="ul-li-video-danh-sach-bai-giang">
+            <ul id="videoList">
+              <li
+                data-index="0"
+                data-url="https://www.youtube.com/watch?v=42FTKqc_GuE&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=1"
+              >
+                01. Bài kiểm tra đánh vần bằng ngón tay (các quốc gia học cách
+                ký hiệu)
+              </li>
+              <li
+                data-index="1"
+                data-url="https://www.youtube.com/watch?v=25XUwHErhnk&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=2"
+              >
+                02. Bài kiểm tra đánh vần bằng ngón tay
+              </li>
+              <li
+                data-index="2"
+                data-url="https://www.youtube.com/watch?v=OsrSL1XXUOA&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=3"
+              >
+                03. Bài kiểm tra (25 dấu hiệu đầu tiên)
+              </li>
+              <li
+                data-index="3"
+                data-url="https://www.youtube.com/watch?v=3BUZDY74ICg&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=4"
+              >
+                04. Bài kiểm tra đánh vần bằng ngón tay (thiết bị thể thao)
+              </li>
+              <li
+                data-index="4"
+                data-url="https://www.youtube.com/watch?v=5jIYrP9lRNo&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=5"
+              >
+                05. Bài kiểm tra (giới thiệu 99 dấu hiệu đầu tiên)
+              </li>
+              <li
+                data-index="5"
+                data-url="https://www.youtube.com/watch?v=aXAs0ur_llI&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=6"
+              >
+                06. Bài kiểm tra về gia đình (99 dấu hiệu)
+              </li>
+              <li
+                data-index="6"
+                data-url="https://www.youtube.com/watch?v=Bb7qO5S4tt0&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=7"
+              >
+                07. Bài kiểm tra về ngày lễ
+              </li>
+              <li
+                data-index="7"
+                data-url="https://www.youtube.com/watch?v=7_jwiit9nng&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=8"
+              >
+                08. Trắc nghiệm về cụm từ (đàm thoại)
+              </li>
+              <li
+                data-index="8"
+                data-url="https://www.youtube.com/watch?v=JO9wGHfDTHE&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=9"
+              >
+                09. Bài kiểm tra đánh vần bằng ngón tay (từ vựng lớp 1)
+              </li>
+              <li
+                data-index="9"
+                data-url="https://www.youtube.com/watch?v=phU0CMwF8nI&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=10"
+              >
+                10. Bài kiểm tra đánh vần bằng ngón tay (quà tặng giáng sinh)
+              </li>
+              <li
+                data-index="10"
+                data-url="https://www.youtube.com/watch?v=adBilReiOD8&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=11"
+              >
+                11. Bài kiểm tra về hội thoại
+              </li>
+              <li
+                data-index="11"
+                data-url="https://www.youtube.com/watch?v=cG_ngva3tCo&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=12"
+              >
+                12. Trắc nghiệm cụm từ giao tiếp hằng ngày
+              </li>
+              <li
+                data-index="12"
+                data-url="https://www.youtube.com/watch?v=cpe4pl24XeA&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=13"
+              >
+                13. Bài kiểm tra đánh vần bằng ngón tay (saschh kinh thánh)
+              </li>
+              <li
+                data-index="13"
+                data-url="https://www.youtube.com/watch?v=K9ejaYeyioA&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=14"
+              >
+                14. Bài kiểm tra tương tác
+              </li>
+              <li
+                data-index="14"
+                data-url="https://www.youtube.com/watch?v=oIq3WSAut_c&list=PLMN7QCuj6dfY29d_bG3VP2UWi9l652jU-&index=15"
+              >
+                15. Bài kiểm tra đánh vần bằng ngón tay (cà phê - thực phẩm)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-danh-sach-bai-giang">
+          <iframe
+            id="videoFrame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div id="progressContainer">
+            <div id="progressDisplay"></div>
+            <div class="progress-bar-bg">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nút chuyển đổi -->
+      <div class="trang-dieu-huong" id="trang-dieu-huong">
+        <div class="trang-truoc">
+          <button><span>Bài trước</span></button>
+        </div>
+        <div class="trang-sau">
+          <button><span>Bài sau</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liên Kết JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./bai-kiem-tra.js"></script>
+  </body>
+</html>

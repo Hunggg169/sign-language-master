@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học Cơ Bản</title>
+    <link rel="stylesheet" href="./phan-tich.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Nút chuyển đổi -->
+      <div class="danh-sach-bai-giang">
+        <a href="javascript:void(0);" onclick="toggleSections('danhSach')">
+          <i class="fa-thin fa-list"></i>
+          <span>Danh sách bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="noi-dung-bai-giang" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleSections('noiDung')">
+          <i class="fa-solid fa-book"></i>
+          <span>Nội dung bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="data-tongle">
+        <div class="video-bai-giang">
+          <img
+            src="../Image/phan tichh ASL.jpg"
+            alt="Phân Tích Sign Language Master"
+          />
+        </div>
+        <div class="gioi-thieu-bai-giang" id="gioiThieuBaiGiang">
+          <h2>Phân Tích Trong Sign Language Master</h2>
+          <div class="title-khoa-hoc1">
+            <p>Tạo bởi</p>
+            <a href="#"><span>Sign Language Master</span></a>
+            <p>Cập nhập lần cuối</p>
+            <span>12 tháng trước</span>
+          </div>
+          <div class="title-khoa-hoc2">
+            <div class="title-khoa-hoc2-1 title2">
+              <i class="fa-thin fa-notebook"></i>
+              <span>6</span>
+              <p>bài học</p>
+            </div>
+            <div class="title-khoa-hoc2-2 title2">
+              <i class="fa-light fa-eye"></i>
+              <span></span>
+              <p>lượt xem</p>
+            </div>
+            <div class="title-khoa-hoc2-3 title2">
+              <i class="fa-solid fa-comment"></i>
+              <span>0</span>
+              <p>bình luận</p>
+            </div>
+          </div>
+          <div class="title-khoa-hoc3">
+            <p>
+              Khóa Học Phân Tích trong Sign Language Master sẽ giúp bạn hiểu sâu
+              hơn về các thành phần và cấu trúc của ngôn ngữ ký hiệu. Khóa học
+              này tập trung vào việc phân tích các ký hiệu, biểu đạt khuôn mặt,
+              và ngôn ngữ cơ thể để truyền tải thông điệp một cách rõ ràng và
+              hiệu quả. Bạn sẽ học cách nhận diện và diễn giải các yếu tố ngôn
+              ngữ khác nhau, qua đó nâng cao khả năng hiểu và sử dụng ngôn ngữ
+              ký hiệu một cách linh hoạt. Đây là bước quan trọng cho những ai
+              muốn trở thành chuyên gia hoặc người sử dụng thông thạo ngôn ngữ
+              ký hiệu. Tham gia ngay để khám phá chiều sâu của ngôn ngữ ký hiệu!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="data-tongle2" id="dataTongle2" style="display: none">
+        <div class="noi-dung-danh-sach-bai-giang">
+          <h5>
+            <i class="fa-thin fa-list"></i>
+            <span>Danh sách bài giảng</span>
+          </h5>
+          <div class="search-container">
+            <input type="text" placeholder="Tìm bài học..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="ul-li-video-danh-sach-bai-giang">
+            <ul id="videoList">
+              <li
+                data-index="0"
+                data-url="https://www.youtube.com/watch?v=3j3eP-fJUAw&list=PLMN7QCuj6dfYzN0CvQp18q-FWSMbd8C6E"
+              >
+                01. Giáo viên Sign Language Master phân tích bộ phim CODA
+              </li>
+              <li
+                data-index="1 "
+                data-url="https://www.youtube.com/watch?v=2YNIcorDor4&list=PLMN7QCuj6dfYzN0CvQp18q-FWSMbd8C6E&index=2"
+              >
+                02. Biểu diễn Quốc ca dành cho người khiếm thính
+              </li>
+              <li
+                data-index="2"
+                data-url="https://www.youtube.com/watch?v=-awkiQ9MCA8&list=PLMN7QCuj6dfYzN0CvQp18q-FWSMbd8C6E&index=3"
+              >
+                03. Hướng dẫn hát quốc ca Sign Language Master (Star Spangled
+                Banner)
+              </li>
+              <li
+                data-index="3"
+                data-url="https://www.youtube.com/watch?v=TFDBU8iT_dU&list=PLMN7QCuj6dfYzN0CvQp18q-FWSMbd8C6E&index=4"
+              >
+                04. Sign Language Master tại Super Bowl (Trực tiếp với Meredith)
+              </li>
+              <li
+                data-index="4"
+                data-url="https://www.youtube.com/watch?v=3CRo7nb7bPE&list=PLMN7QCuj6dfaKxdKz6bAaqE0O7eiwnNDy"
+              >
+                05. Ngôn ngữ ký hiệu Mỹ và Ngôn ngữ ký hiệu Anh
+              </li>
+              <li
+                data-index="5"
+                data-url="https://www.youtube.com/watch?v=0Q5bisgIlW4&list=PLMN7QCuj6dfaKxdKz6bAaqE0O7eiwnNDy&index=2"
+              >
+                06. Điểm giống và khác nhau giữa ngôn ngữ ký hiệu Mỹ và Ngôn ngữ
+                ký hiệu Anh
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-danh-sach-bai-giang">
+          <iframe
+            id="videoFrame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div id="progressContainer">
+            <div id="progressDisplay"></div>
+            <div class="progress-bar-bg">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nút chuyển đổi -->
+      <div class="trang-dieu-huong" id="trang-dieu-huong">
+        <div class="trang-truoc">
+          <button><span>Bài trước</span></button>
+        </div>
+        <div class="trang-sau">
+          <button><span>Bài sau</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- Liên Kết JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./phan-tich.js"></script>
+  </body>
+</html>

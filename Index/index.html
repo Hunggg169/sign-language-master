@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language Master</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" type="image/png" href="../Image/image(1591).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="background">
+        <img src="../Image/bg.jpg" alt="Background" />
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="../Image/image(1591).png" alt="Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../About/about.html">Giới thiệu</a></li>
+                <li><a href="../Learn/learn.html">Khóa học</a></li>
+                <li><a href="../Question/question.html">Hỏi đáp</a></li>
+                <li><a href="../Documentation/documentation.html">Bài viết</a></li>
+                <li><a href="../Donate/donate.html">Tài Trợ</a></li>
+                <li><a href="../Contact/contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header2>
+        <div class="actions">
+            <ul>
+                <li>
+                    <a href="#" class="search">
+                        <i class="fa-solid fa-magnifying-glass task_"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pencil">
+                        <i class="fa-solid fa-pencil task_"></i>
+                    </a>
+                </li>
+                <li>
+                    <!-- Button cho Đăng ký và Đăng nhập -->
+                    <button id="login-account-btn" class="account-btn">
+              <i class="fa-solid fa-user"></i> Tài Khoản
+              <div class="dropdown-account" id="login-dropdown">
+                <a href="../Register/register.html" class="dropdown-option">
+                  <i class="fa-solid fa-user"></i> Đăng Kí
+                </a>
+                <a href="../Login/login.html" class="dropdown-option">
+                  <i class="fa-solid fa-user-plus"></i> Đăng Nhập
+                </a>
+              </div>
+            </button>
+
+                    <!-- Button cho Hồ sơ, Cài đặt và Đăng xuất -->
+                    <button id="profile-account-btn" class="account-btn" style="display: none">
+              <i class="fa-solid fa-user"></i> Tài Khoản
+              <div
+                class="dropdown-account"
+                id="profile-dropdown"
+                style="display: none"
+              >
+                <a href="../Profile/profile.html" class="dropdown-option">
+                  <i class="fa-solid fa-user"></i> Hồ Sơ
+                </a>
+                <a href="../Settings/settings.html" class="dropdown-option">
+                  <i class="fa-solid fa-cog"></i> Cài Đặt
+                </a>
+                <a href="#" class="dropdown-option" onclick="logout()">
+                  <i class="fa-solid fa-sign-out-alt"></i> Đăng Xuất
+                </a>
+              </div>
+            </button>
+
+                    <!-- Button Đi đến khóa học -->
+                    <button id="go-to-course-btn" class="course-btn" style="display: none" onclick="goToCourse()">
+              Đi đến khóa học
+            </button>
+                </li>
+                <li>
+                    <a href="#" class="bars" id="toggleBox">
+                        <i class="fa-solid fa-bars task_"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header2>
+    <!-- Khối box -->
+    <div class="box" id="box" style="display: none">
+        <div class="header-box">
+            <span>Quan tâm</span>
+            <ul>
+                <li>
+                    <a href="#" id="create-question-btn"><i class="fa-thin fa-plus"></i
+            ></a>
+                    <div class="hover-box">Tạo Câu Hỏi</div>
+                </li>
+                <!-- Form nhập câu hỏi (ẩn mặc định) -->
+                <div class="modal" id="question-modal">
+                    <div class="modal-content">
+                        <span class="close-btn" id="close-btn">&times;</span>
+                        <h2>Nhập câu hỏi của bạn</h2>
+                        <input type="text" id="question-input" placeholder="Nhập câu hỏi" />
+                        <button id="submit-question" class="submit-btn">Gửi</button>
+                    </div>
+                </div>
+                <li>
+                    <a href="../Rooms/room.html"><i class="fa-solid fa-user-group"></i
+            ></a>
+                    <div class="hover-box">Nhóm Chát</div>
+                </li>
+                <li>
+                    <a href="../Tags/tags.html"><i class="fa-solid fa-ellipsis"></i></a>
+                    <div class="hover-box">Tag Theo Dõi</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text">
+        <span>SIGN LANGUAGE MASTER</span>
+        <h2>Việc Học Thủ Ngữ Chưa Bao Giờ Là Dễ Đến Thế</h2>
+        <p>
+            Sign Language Master cung cấp khả năng dễ dàng truy cập và tìm kiếm các bài học về ngôn ngữ ký hiệu, giúp mọi người khám phá và nâng cao kỹ năng giao tiếp bằng ngôn ngữ ký hiệu một cách hiệu quả.
+        </p>
+        <button><a href="../Learn/learn.html">Học Ngay</a></button>
+    </div>
+
+    <div class="solar-system">
+        <div class="orbit orbit1">
+            <div class="sun">
+                <a href="../Learn/learn.html"><img src="../Image/hocngay.png" alt="Sun" /></a>
+            </div>
+        </div>
+        <div class="orbit orbit2">
+            <div class="planet planet-tai-lieu">
+                <a href="../Documentation/documentation.html">
+                    <img src="../Image/tailieu.png" alt="Tài Liệu" />
+                </a>
+            </div>
+            <div class="planet planet-tai-tro">
+                <a href="../Donate/donate.html">
+                    <img src="../Image/taitro.png" alt="Tài Trợ" />
+                </a>
+            </div>
+            <div class="planet planet-kter">
+                <a href="../Users/users.html">
+                    <img src="../Image/kter.png" alt="KTER" />
+                </a>
+            </div>
+            <div class="planet planet-chung-chi">
+                <a href="../Certificate/certificate.html">
+                    <img src="../Image/chungchi.png" alt="Chứng Chỉ" />
+                </a>
+            </div>
+        </div>
+        <div class="orbit orbit3">
+            <div class="planet planet-phan-hoi">
+                <a href="../Contact/contact.html">
+                    <img src="../Image/phanhoi.png" alt="Phản Hồi" />
+                </a>
+            </div>
+            <div class="planet planet-hoi-dap">
+                <a href="../Question/question.html">
+                    <img src="../Image/hoidap.png" alt="Hỏi Đáp" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

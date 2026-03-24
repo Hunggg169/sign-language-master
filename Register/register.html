@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="logo">
+      <a href="../Index/index.html">
+        <img src="../Image/image(1591).png" alt="Logo" />
+      </a>
+    </div>
+    <div class="text">
+      <span>Đăng ký tài khoản mới</span>
+    </div>
+    <div class="register-box">
+      <form id="register-form" method="POST">
+        <!-- Email field -->
+        <div class="text-form">
+          <label for="email">Email</label>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Username field -->
+        <div class="text-form">
+          <label for="username">User Name</label>
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Password field -->
+        <div class="text-form">
+          <label for="password">Password</label>
+          <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Retype Password field -->
+        <div class="text-form">
+          <label for="retype_password">Retype Password</label>
+          <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="retype_password"
+              name="retype_password"
+              placeholder="Retype Password"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Đăng Ký</button>
+      </form>
+    </div>
+
+    <!-- Terms of use -->
+    <div class="dieu-khoan">
+      <span
+        >Khi đăng ký, bạn đã đồng ý với Điều khoản sử dụng và Chính sách bảo mật
+        của chúng tôi.</span
+      >
+    </div>
+
+    <!-- Already have an account? -->
+    <div class="text-bottom">
+      <div class="co-tk">
+        <span>Bạn đã có tài khoản?</span>
+        <a href="../Login/login.html">Đăng Nhập!</a>
+      </div>
+      <div class="quen-mk">
+        <span>Quên mật khẩu?</span>
+        <a href="../Forgotpassword/forgotpassword.html">Reset Password</a>
+      </div>
+    </div>
+
+    <!-- Modal for displaying messages -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-message">Thông báo sẽ được hiển thị tại đây</p>
+      </div>
+    </div>
+
+    <div id="modal-success">
+      <h3>Tài khoản đã đăng ký thành công!</h3>
+      <table>
+        <tr>
+          <th>Email</th>
+          <td id="modal-email"></td>
+        </tr>
+        <tr>
+          <th>Username</th>
+          <td id="modal-username"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Linking external JS -->
+    <script src="./register.js"></script>
+  </body>
+</html>

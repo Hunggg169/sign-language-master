@@ -1,0 +1,209 @@
+/* RESET & CƠ BẢN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    color: #fff;
+}
+
+
+/* BACKGROUND & OVERLAY */
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+.background img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5) blur(2px);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+    z-index: -1;
+}
+
+
+/* HEADER */
+
+.playlist-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.playlist-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #e8f5e9;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.playlist-header p {
+    color: #dfe6e9;
+    font-size: 1.1em;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+
+/* MUSIC CONTAINER */
+
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+
+/* TRACK CARD (GLASS EFFECT) */
+
+.track {
+    width: 85%;
+    max-width: 750px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.track:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ẢNH THUMB */
+
+.track img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+
+/* INFO & AUDIO */
+
+.track-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.track-info h3 {
+    font-size: 1.05em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+audio {
+    width: 100%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+}
+
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.page-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#page-info {
+    color: #e0f7fa;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+    display: block;
+    margin: 40px auto 60px;
+    background: rgba(0, 200, 83, 0.85);
+    color: #fff;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(0, 230, 118, 1);
+    transform: scale(1.05);
+}
+
+
+/* SCROLLBAR ĐẸP */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+
+/* Imgage */
+
+.image_ {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image_ img {
+    width: 180px;
+    height: 120px;
+    margin: 15px;
+    cursor: pointer;
+}

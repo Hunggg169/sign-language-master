@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học Cơ Bản</title>
+    <link rel="stylesheet" href="./khoa-hoc-co-ban.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Nút chuyển đổi -->
+      <div class="danh-sach-bai-giang">
+        <a href="javascript:void(0);" onclick="toggleSections('danhSach')">
+          <i class="fa-thin fa-list"></i>
+          <span>Danh sách bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="noi-dung-bai-giang" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleSections('noiDung')">
+          <i class="fa-solid fa-book"></i>
+          <span>Nội dung bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="data-tongle">
+        <div class="video-bai-giang">
+          <img src="../Image/khoa hoc co ban.jpg" alt="Khóa Học Cơ Bản" />
+        </div>
+        <div class="gioi-thieu-bai-giang" id="gioiThieuBaiGiang">
+          <h2>Khóa Học Cơ Bản Sign Language Master</h2>
+          <div class="title-khoa-hoc1">
+            <p>Tạo bởi</p>
+            <a href="#"><span>Sign Language Master</span></a>
+            <p>Cập nhập lần cuối</p>
+            <span>6 tháng trước</span>
+          </div>
+          <div class="title-khoa-hoc2">
+            <div class="title-khoa-hoc2-1 title2">
+              <i class="fa-thin fa-notebook"></i>
+              <span>15</span>
+              <p>bài học</p>
+            </div>
+            <div class="title-khoa-hoc2-2 title2">
+              <i class="fa-light fa-eye"></i>
+              <span></span>
+              <p>lượt xem</p>
+            </div>
+            <div class="title-khoa-hoc2-3 title2">
+              <i class="fa-solid fa-comment"></i>
+              <span>0</span>
+              <p>bình luận</p>
+            </div>
+          </div>
+          <div class="title-khoa-hoc3">
+            <p>
+              Khóa học cơ bản của Sign Language Master: cung cấp nền tảng vững
+              chắc cho những ai muốn bắt đầu học ngôn ngữ ký hiệu. Với các bài
+              học từ dễ đến khó, khóa học giúp người học nắm bắt các ký hiệu cơ
+              bản, từ vựng và cấu trúc ngôn ngữ ký hiệu. Đây là bước khởi đầu
+              hoàn hảo để giao tiếp hiệu quả với cộng đồng người khiếm thính và
+              mở rộng khả năng giao tiếp đa văn hóa. Tham gia ngay để bắt đầu
+              hành trình khám phá ngôn ngữ ký hiệu!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="data-tongle2" id="dataTongle2" style="display: none">
+        <div class="noi-dung-danh-sach-bai-giang">
+          <h5>
+            <i class="fa-thin fa-list"></i>
+            <span>Danh sách bài giảng</span>
+          </h5>
+          <div class="search-container">
+            <input type="text" placeholder="Tìm bài học..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="ul-li-video-danh-sach-bai-giang">
+            <ul id="videoList">
+              <li
+                data-index="0"
+                data-url="https://www.youtube.com/watch?v=0FcwzMq4iWg&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=1"
+              >
+                01. 25 ký hiệu ASL bạn cần biết
+              </li>
+              <li
+                data-index="1"
+                data-url="https://www.youtube.com/watch?v=bFv_mLwBvHc&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=3"
+              >
+                02. Học cách ký hiệu bằng bảng chữ cái
+              </li>
+              <li
+                data-index="2"
+                data-url="https://www.youtube.com/watch?v=4Ll3OtqAzyw&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=4"
+              >
+                03. 150 dấu hiệu thiết yếu
+              </li>
+              <li
+                data-index="3"
+                data-url="https://www.youtube.com/watch?v=e48sS09jl8U&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=5"
+              >
+                04. Học cách kí hiệu số
+              </li>
+              <li
+                data-index="4"
+                data-url="https://www.youtube.com/watch?v=BopX7gr1BJ8&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=6"
+              >
+                05. Hướng dẫn câu hỏi
+              </li>
+              <li
+                data-index="5"
+                data-url="https://www.youtube.com/watch?v=eZtBJbdrJSg&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=7"
+              >
+                06. Học cách ký hiệu và các kí hiệu động vật
+              </li>
+              <li
+                data-index="6"
+                data-url="https://www.youtube.com/watch?v=y9Rj_X0IsKY&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=8"
+              >
+                07. Chào hỏi tạm biệt và giới thiệu
+              </li>
+              <li
+                data-index="7"
+                data-url="https://www.youtube.com/watch?v=0M_33EKcPGE&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=9"
+              >
+                08. Các ngày trong tuần và tháng trong năm
+              </li>
+              <li
+                data-index="8"
+                data-url="https://www.youtube.com/watch?v=DNePzomUmd8&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=10"
+              >
+                09. Ngôn ngữ kí hiệu giao tiếp
+              </li>
+              <li
+                data-index="9"
+                data-url="https://www.youtube.com/watch?v=hLj8UEZjuTg&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=11"
+              >
+                10. Học cách kí hiệu các địa điểm quanh thị trấn
+              </li>
+              <li
+                data-index="10"
+                data-url="https://www.youtube.com/watch?v=s2eiD3PuyNE&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=12"
+              >
+                11. Học cách mô tả mọi người
+              </li>
+              <li
+                data-index="11"
+                data-url="https://www.youtube.com/watch?v=QYYMBAEs6Vg&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=13"
+              >
+                12. Học cách kí hiệu cảm xúc và tình cảm
+              </li>
+              <li
+                data-index="12"
+                data-url="https://www.youtube.com/watch?v=G6hVRVG74lc&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=14"
+              >
+                13. 100 kí hiệu trong 5 phút
+              </li>
+              <li
+                data-index="13"
+                data-url="https://www.youtube.com/watch?v=Z-SpwYg0U2g&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=15"
+              >
+                14. Cách giao tiếp với khách hàng khiếm thính
+              </li>
+              <li
+                data-index="14"
+                data-url="https://www.youtube.com/watch?v=lwMt78485CE&list=PLMN7QCuj6dfYD8DfG1rN6rEo1b1RyvgKF&index=17"
+              >
+                15. Học các kí hiệu trái cây và rau củ
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-danh-sach-bai-giang">
+          <iframe
+            id="videoFrame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div id="progressContainer">
+            <div id="progressDisplay"></div>
+            <div class="progress-bar-bg">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nút chuyển đổi -->
+      <div class="trang-dieu-huong" id="trang-dieu-huong">
+        <div class="trang-truoc">
+          <button><span>Bài trước</span></button>
+        </div>
+        <div class="trang-sau">
+          <button><span>Bài sau</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Liên Kết JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./khoa-hoc-co-ban.js"></script>
+  </body>
+</html>

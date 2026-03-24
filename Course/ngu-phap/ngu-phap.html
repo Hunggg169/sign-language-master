@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khóa Học Cơ Bản</title>
+    <link rel="stylesheet" href="./ngu-phap.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/your_kit_code.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../Image/image(1591).png"
+    />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- Nút chuyển đổi -->
+      <div class="danh-sach-bai-giang">
+        <a href="javascript:void(0);" onclick="toggleSections('danhSach')">
+          <i class="fa-thin fa-list"></i>
+          <span>Danh sách bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="noi-dung-bai-giang" style="display: none">
+        <a href="javascript:void(0);" onclick="toggleSections('noiDung')">
+          <i class="fa-solid fa-book"></i>
+          <span>Nội dung bài giảng</span>
+        </a>
+        <!-- Nút thoát -->
+        <div class="exit">
+          <a href="/Learn/learn.html" class="nut-thoat">
+            <i class="fa-solid fa-xmark"></i>
+          </a>
+        </div>
+      </div>
+      <div class="data-tongle">
+        <div class="video-bai-giang">
+          <img
+            src="../Image/ngu phap ASL.jpg"
+            alt="Khóa Học Về Ngữ Pháp Trong Sign Language Master"
+          />
+        </div>
+        <div class="gioi-thieu-bai-giang" id="gioiThieuBaiGiang">
+          <h2>Khóa Học Sign Language Master Về Ngữ Pháp</h2>
+          <div class="title-khoa-hoc1">
+            <p>Tạo bởi</p>
+            <a href="#"><span>Sign Language Master</span></a>
+            <p>Cập nhập lần cuối</p>
+            <span>3 tháng trước</span>
+          </div>
+          <div class="title-khoa-hoc2">
+            <div class="title-khoa-hoc2-1 title2">
+              <i class="fa-thin fa-notebook"></i>
+              <span>15</span>
+              <p>bài học</p>
+            </div>
+            <div class="title-khoa-hoc2-2 title2">
+              <i class="fa-light fa-eye"></i>
+              <span></span>
+              <p>lượt xem</p>
+            </div>
+            <div class="title-khoa-hoc2-3 title2">
+              <i class="fa-solid fa-comment"></i>
+              <span>0</span>
+              <p>bình luận</p>
+            </div>
+          </div>
+          <div class="title-khoa-hoc3">
+            <p>
+              Khóa Học Về Ngữ Pháp trong Sign Language Master giúp người học nắm
+              vững các nguyên tắc và cấu trúc ngữ pháp trong ngôn ngữ ký hiệu.
+              Khóa học này cung cấp kiến thức từ cơ bản đến nâng cao về cách xây
+              dựng câu, sắp xếp từ, và sử dụng các ký hiệu biểu cảm để truyền
+              đạt ý nghĩa một cách chính xác và tự nhiên. Đây là khóa học lý
+              tưởng cho những ai muốn cải thiện kỹ năng giao tiếp trong ngôn ngữ
+              ký hiệu và hiểu sâu hơn về ngữ pháp độc đáo của ngôn ngữ này. Hãy
+              tham gia ngay để hoàn thiện khả năng ngôn ngữ ký hiệu của bạn!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="data-tongle2" id="dataTongle2" style="display: none">
+        <div class="noi-dung-danh-sach-bai-giang">
+          <h5>
+            <i class="fa-thin fa-list"></i>
+            <span>Danh sách bài giảng</span>
+          </h5>
+          <div class="search-container">
+            <input type="text" placeholder="Tìm bài học..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="ul-li-video-danh-sach-bai-giang">
+            <ul id="videoList">
+              <li
+                data-index="0"
+                data-url="https://www.youtube.com/watch?v=i520LPUkpYc&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU"
+              >
+                01. Bài học ngữ pháp đầu tiên của bạn
+              </li>
+              <li
+                data-index="1"
+                data-url="https://www.youtube.com/watch?v=6w1ZDaE-whc&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=2"
+              >
+                02. 10 điều bạn cần biết về Sign Language Master
+              </li>
+              <li
+                data-index="2"
+                data-url="https://www.youtube.com/watch?v=fDV9Al8Fgjk&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=3"
+              >
+                03. Giải thích cấu trúc câu ASL (Ngôn ngữ ký hiệu Hoa Kỳ dành
+                cho người mới bắt đầu)
+              </li>
+              <li
+                data-index="3"
+                data-url="https://www.youtube.com/watch?v=TLGGDWCSe2Q&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=4"
+              >
+                04. Những điều cơ bản của câu hỏi và câu trả lời trong Sign
+                Language Master
+              </li>
+              <li
+                data-index="4"
+                data-url="https://www.youtube.com/watch?v=BM9mldlyyDg&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=5"
+              >
+                05. Tổ chức ký hiệu rõ ràng (Liệt kê và sắp xếp)
+              </li>
+              <li
+                data-index="5"
+                data-url="https://www.youtube.com/watch?v=i_TSm34RnaA&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=6"
+              >
+                06. 12 quy tắc, mẹo và thủ thuật thiết yếu về đánh vần bằng ngón
+                tay
+              </li>
+              <li
+                data-index="6"
+                data-url="https://www.youtube.com/watch?v=hc-jhMDkovs&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=7"
+              >
+                07. Biển báo chỉ đường
+              </li>
+              <li
+                data-index="7"
+                data-url="https://www.youtube.com/watch?v=DrpLdkVAZ-I&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=8"
+              >
+                08. 5 Quy tắc cho mọi dấu hiệu (5 Tham số của Dấu hiệu)
+              </li>
+              <li
+                data-index="8"
+                data-url="https://www.youtube.com/watch?v=1uaF8CECxrc&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=9"
+              >
+                09. Học cách ký hiệu biểu cảm (Tín hiệu không thủ công)
+              </li>
+              <li
+                data-index="9"
+                data-url="https://www.youtube.com/watch?v=BopX7gr1BJ8&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=10"
+              >
+                10. Hướng dẫn câu hỏi trong Sign Language Master
+              </li>
+              <li
+                data-index="10"
+                data-url="https://www.youtube.com/watch?v=s2eiD3PuyNE&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=11"
+              >
+                11. Cách mô tả mọi người bằng Sign Language Master
+              </li>
+              <li
+                data-index="11"
+                data-url="https://www.youtube.com/watch?v=RZQTVnzMx4U&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=12"
+              >
+                12. Ngôn ngữ ký hiệu giao tiếp (Phần 1)
+              </li>
+              <li
+                data-index="12"
+                data-url="https://www.youtube.com/watch?v=DNePzomUmd8&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=13"
+              >
+                13. Ngôn ngữ ký hiệu giao tiếp (Phần 2)
+              </li>
+              <li
+                data-index="13"
+                data-url="https://www.youtube.com/watch?v=kmpV_-TFMNQ&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=14"
+              >
+                14. Biển báo nhiều nghĩa
+              </li>
+              <li
+                data-index="14"
+                data-url="https://www.youtube.com/watch?v=ZPGv7O9VTFA&list=PLMN7QCuj6dfY6wtU3KhX0hqs_YZdIWvQU&index=15"
+              >
+                15. Thực hiện theo hướng dẫn trong Sign Language Master
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="video-danh-sach-bai-giang">
+          <iframe
+            id="videoFrame"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <div id="progressContainer">
+            <div id="progressDisplay"></div>
+            <div class="progress-bar-bg">
+              <div id="progressBar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nút chuyển đổi -->
+      <div class="trang-dieu-huong" id="trang-dieu-huong">
+        <div class="trang-truoc">
+          <button><span>Bài trước</span></button>
+        </div>
+        <div class="trang-sau">
+          <button><span>Bài sau</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- Liên Kết JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./ngu-phap.js"></script>
+  </body>
+</html>
